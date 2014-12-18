@@ -58,20 +58,9 @@
             <div>
     <ul class="breadcrumb">
         <li>
-            <a href="#"> Beranda</a>
+            <a href="./"><i class="glyphicon glyphicon-home"></i> Beranda</a>
         </li>
     </ul>
-</div>
-<div class=" row">
-    <div class="col-md-3 col-sm-3 col-xs-6">
-        <a data-toggle="tooltip" title="6 penduduk baru." class="well top-block" href="#">
-            <i class="glyphicon glyphicon-user blue"></i>
-
-            <div>Total penduduk</div>
-            <div>507</div>
-            <span class="notification">6</span>
-        </a>
-    </div>
 </div>
 
 <div class="row">
@@ -91,19 +80,7 @@
             </div>
             <div class="box-content row">
                 <div class="col-lg-7 col-md-12">
-                    <h1>SIKUWE <br>
-                        <small>adalah Sistem Informasi Kependudukan berbasis Website.</small>
-                    </h1>
-                    <p>Ini adalah halaman utama dari SIKUWE. SIKUWE dibuat untuk memudahkan kegiatan administrasi pada pedesaan dalam kependudukan</p>
-
-                    <p><b>Silakan digunakan untuk tujuan baik.</b></p>
-
-                    <p class="center-block download-buttons">
-                        <a href="entri.html" class="btn btn-primary btn-lg"><i
-                                class="glyphicon glyphicon-edit"></i> Memulai entri</a>
-                        <a href="penduduk.html" class="btn btn-default btn-lg"><i
-                                class="glyphicon glyphicon-user"></i> Lihat data penduduk</a>
-                    </p>
+                    <?php echo $content; ?>
                 </div>
             </div>
         </div>
