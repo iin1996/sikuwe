@@ -12,15 +12,53 @@ return array(
 	'theme'=>'sikuwe',
 
 	// preloading 'log' component
-	'preload'=>array('log'),
+	'preload'=>array('log','bootstrap'),
 
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+        'application.modules.user.models.*',
+        'application.modules.user.components.*',
 	),
 
 	'modules'=>array(
+		'user'array(
+			'tableUsers' => 'tbl_users',
+            'tableProfiles' => 'tbl_profiles',
+            'tableProfileFields' => 'tbl_profiles_fields',
+            
+            # encrypting method (php hash function)
+            'hash' => 'md5',
+
+            # send activation email
+            'sendActivationMail' => true,
+
+            # allow access for non-activated users
+            'loginNotActiv' => false,
+
+            # activate user on registration (only sendActivationMail = false)
+            'activeAfterRegister' => false,
+
+            # automatically login from registration
+            'autoLogin' => true,
+
+            # registration path
+            'registrationUrl' => array('/user/registration'),
+
+            # recovery password path
+            'recoveryUrl' => array('/user/recovery'),
+
+            # login form path
+            'loginUrl' => array('/user/login'),
+
+            # page after login
+            'returnUrl' => array('/site/index'), //'/user/profile'
+
+            # page after logout
+            'returnLogoutUrl' => array('/user/login'),
+        ),
+
 		// uncomment the following to enable the Gii tool
 		
 		'gii'=>array(
@@ -36,32 +74,35 @@ return array(
 	'components'=>array(
 		'user'=>array(
 			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
+			'allowAutoLogin'=>false,
 		),
 		// uncomment the following to enable URLs in path-format
-		/*
+		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+				),
+			'showScriptName'=>true,
 			),
-		),
-		*/
+		
+		/*
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 		),
+		*/
 		// uncomment the following to use a MySQL database
-		/*
+		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=testdrive',
+			'connectionString' => 'mysql:host=localhost;dbname=sikuwe',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '',
+			'password' => 'maarif',
 			'charset' => 'utf8',
 		),
-		*/
+		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
