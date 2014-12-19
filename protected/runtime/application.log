@@ -77,3 +77,188 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/create
 ---
+2014/12/19 13:00:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/add".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/add')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/add
+---
+2014/12/19 13:04:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/add".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/add')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/add
+---
+2014/12/19 13:08:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/add".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/add')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/add
+---
+2014/12/19 13:08:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/add".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/add')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/add
+---
+2014/12/19 13:08:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/add".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/add')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/add
+---
+2014/12/19 13:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/add".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/add')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/add
+---
+2014/12/19 13:11:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/add".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/add')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/add
+---
+2014/12/19 13:12:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/create".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/create')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/create
+---
+2014/12/19 13:18:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('login')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=login
+---
+2014/12/19 13:18:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('user/login')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=user/login
+---
+2014/12/19 13:27:23 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbMenu" is invalid. Make sure it points to an existing directory or file.' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/YiiBase.php:343
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(LoginController), 'bootstrap.widge...', Array)
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/views/user/right_side_user.php(38): CBaseController->widget('bootstrap.widge...', Array)
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/mnt/home/samsu...')
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/mnt/home/samsu...', NULL, true)
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(870): CBaseController->renderFile('/mnt/home/samsu...', NULL, true)
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/views/user/login.php(65): CController->renderPartial('/user/right_sid...')
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/mnt/home/samsu...')
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/mnt/home/samsu...', Array, true)
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(870): CBaseController->renderFile('/mnt/home/samsu...', Array, true)
+#11 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(783): CController->renderPartial('/user/login', Array, true)
+#12 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/controllers/LoginController.php(28): CController->render('/user/login', Array)
+#13 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): LoginController->actionLogin()
+#14 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#16 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#18 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('user/login')
+#19 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=user/login
+---
+2014/12/19 13:35:49 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "updateSession".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CComponent.php:266
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/models/User.php(202): CComponent->__call('updateSession', Array)
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/models/User.php(202): CWebUser->updateSession()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(1066): User->afterSave()
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(796): CActiveRecord->update(NULL)
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/controllers/LoginController.php(36): CActiveRecord->save()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/controllers/LoginController.php(20): LoginController->lastViset()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): LoginController->actionLogin()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#11 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('user/login')
+#12 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=user/login
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=user/login
+---
+2014/12/19 13:47:18 [error] [php] Undefined variable: content (/mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/views/user/login.php:2)
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(870): LoginController->renderFile()
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(783): LoginController->renderPartial()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/controllers/LoginController.php(28): LoginController->render()
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): LoginController->actionLogin()
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): LoginController->runAction()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): LoginController->runActionWithFilters()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): LoginController->run()
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/sikuwe/index.php?r=user/login
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/views/user/login.php (2)
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/controllers/LoginController.php (28)
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php (13)
+2014/12/19 13:48:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('login')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=login
+---
+2014/12/19 13:49:00 [error] [php] Undefined variable: content (/mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/views/user/login.php:2)
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(870): LoginController->renderFile()
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(783): LoginController->renderPartial()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/controllers/LoginController.php(28): LoginController->render()
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): LoginController->actionLogin()
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): LoginController->runAction()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): LoginController->runActionWithFilters()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): LoginController->run()
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/sikuwe/index.php?r=user/login
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/views/user/login.php (2)
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/controllers/LoginController.php (28)
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php (13)
+2014/12/19 13:49:01 [error] [php] Undefined variable: content (/mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/views/user/login.php:2)
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(870): LoginController->renderFile()
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(783): LoginController->renderPartial()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/controllers/LoginController.php(28): LoginController->render()
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): LoginController->actionLogin()
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): LoginController->runAction()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): LoginController->runActionWithFilters()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): LoginController->run()
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/sikuwe/index.php?r=user/login
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/views/user/login.php (2)
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/controllers/LoginController.php (28)
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php (13)

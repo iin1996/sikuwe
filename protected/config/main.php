@@ -2,7 +2,7 @@
 
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
-//Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
+Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
@@ -18,17 +18,17 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
-        //'application.modules.user.models.*',
-        //'application.modules.user.components.*',
+        'application.modules.user.models.*',
+        'application.modules.user.components.*',
 	),
 
 	'modules'=>array(
 		'penduduk',
-		/*
-		'user'array(
-			'tableUsers' => 'tbl_users',
-            'tableProfiles' => 'tbl_profiles',
-            'tableProfileFields' => 'tbl_profiles_fields',
+		
+		'user'=>array(
+			//'tableUsers' => 'users',
+            //'tableProfiles' => 'tbl_profiles',
+            //'tableProfileFields' => 'tbl_profiles_fields',
             
             # encrypting method (php hash function)
             'hash' => 'md5',
@@ -43,7 +43,7 @@ return array(
             'activeAfterRegister' => false,
 
             # automatically login from registration
-            'autoLogin' => true,
+            'autoLogin' => false,
 
             # registration path
             'registrationUrl' => array('/user/registration'),
@@ -60,7 +60,7 @@ return array(
             # page after logout
             'returnLogoutUrl' => array('/user/login'),
         ),
-		*/
+		
 		// uncomment the following to enable the Gii tool
 		
 		'gii'=>array(
@@ -103,6 +103,7 @@ return array(
 			'username' => 'root',
 			'password' => 'maarif',
 			'charset' => 'utf8',
+			'tablePrefix' => 'tbl_',
 		),
 		
 		'errorHandler'=>array(
