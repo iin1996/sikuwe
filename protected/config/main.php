@@ -2,7 +2,7 @@
 
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
-Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
+//Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
@@ -12,17 +12,18 @@ return array(
 	'theme'=>'sikuwe',
 
 	// preloading 'log' component
-	'preload'=>array('log','bootstrap'),
+	'preload'=>array('log'),
 
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
-        'application.modules.user.models.*',
-        'application.modules.user.components.*',
+        //'application.modules.user.models.*',
+        //'application.modules.user.components.*',
 	),
 
 	'modules'=>array(
+		/*
 		'user'array(
 			'tableUsers' => 'tbl_users',
             'tableProfiles' => 'tbl_profiles',
@@ -58,7 +59,7 @@ return array(
             # page after logout
             'returnLogoutUrl' => array('/user/login'),
         ),
-
+		*/
 		// uncomment the following to enable the Gii tool
 		
 		'gii'=>array(
