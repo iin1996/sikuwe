@@ -37,3 +37,43 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/yii/sikuwe/index.php?r=gii
 ---
+2014/12/19 12:44:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/admin".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/admin')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/admin
+---
+2014/12/19 12:44:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/view".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/view')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/view
+---
+2014/12/19 12:44:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/create".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/create')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/create
+---
+2014/12/19 12:47:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/add".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/add')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/add
+---
+2014/12/19 12:53:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/create".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/create')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/create
+---

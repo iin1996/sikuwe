@@ -163,29 +163,6 @@
                 <a class="btn btn-default center-block col-md-6" title="GitHub"
                    href="https://github.com" target="_blank"><i class="icon-edit"></i> Lihat di Github</a>
 
-                <div class="clearfix"></div>
-                <br>
-                <ul class="github-buttons center-block">
-                    <li>
-                        <iframe
-                            src="http://ghbtns.com/github-btn.html?user=usmanhalalit&amp;repo=charisma&amp;type=watch&amp;count=true"
-                            height="20" width="100" frameborder="0" scrolling="0"></iframe>
-                    </li>
-                    <li>
-                        <iframe
-                            src="http://ghbtns.com/github-btn.html?user=usmanhalalit&amp;repo=charisma&amp;type=fork&amp;count=true"
-                            height="20" width="98" frameborder="0" scrolling="0"></iframe>
-                    </li>
-                </ul>
-                <div class="clearfix"></div>
-
-                <div class="donate">
-                    <div>
-                        <small>Bantu pengembangan SIKUWE</small>
-                    </div>
-                    <a class="btn btn-default" href=""
-                       target="_blank"><i class="glyphicon glyphicon-usd green"></i> Donasi</a>
-                </div>
                 <br/>
 
                 <p>Terimakasih telah membantu pengembangan SIKUWE <a href="http://github.com/"
