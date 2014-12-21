@@ -7,7 +7,7 @@
                     </div>
                     <ul class="nav nav-pills nav-stacked main-menu">
                         <li class="nav-header">Menu utama</li>
-                        <li><a class="ajax-link" href="index.html"><i class="glyphicon glyphicon-home"></i><span> Beranda</span></a></li>
+                        <li><a class="ajax-link" href="./"><i class="glyphicon glyphicon-home"></i><span> Beranda</span></a></li>
                         <li><a class="ajax-link" href="entri.html"><i class="glyphicon glyphicon-edit"></i><span> Entri Data</span></a></li>
                         <li><a class="ajax-link" href="penduduk.html"><i class="glyphicon glyphicon-user"></i><span> Penduduk</span></a></li>
                         <li><a class="ajax-link" href="statistik.html"><i class="glyphicon glyphicon-list-alt"></i><span> Statistik</span></a></li>

@@ -1,5 +1,5 @@
 <?php
-/* @var $this PendudukController */
+/* @var $this AdminController */
 /* @var $model Penduduk */
 
 $this->breadcrumbs=array(

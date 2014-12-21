@@ -1,5 +1,5 @@
 <?php
-/* @var $this PendudukController */
+/* @var $this AdminController */
 /* @var $model Penduduk */
 /* @var $form CActiveForm */
 ?>
@@ -7,7 +7,7 @@
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'penduduk-add-form',
+	'id'=>'penduduk-form',
 	'enableAjaxValidation'=>false,
 )); ?>
 
@@ -17,19 +17,19 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'nik'); ?>
-		<?php echo $form->textField($model,'nik'); ?>
+		<?php echo $form->textField($model,'nik',array('size'=>16,'maxlength'=>16)); ?>
 		<?php echo $form->error($model,'nik'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'nama'); ?>
-		<?php echo $form->textField($model,'nama'); ?>
+		<?php echo $form->textField($model,'nama',array('size'=>60,'maxlength'=>75)); ?>
 		<?php echo $form->error($model,'nama'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'tempat_lahir'); ?>
-		<?php echo $form->textField($model,'tempat_lahir'); ?>
+		<?php echo $form->textField($model,'tempat_lahir',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'tempat_lahir'); ?>
 	</div>
 
@@ -41,19 +41,19 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'kewarganegaraan'); ?>
-		<?php echo $form->textField($model,'kewarganegaraan'); ?>
+		<?php echo $form->textField($model,'kewarganegaraan',array('size'=>18,'maxlength'=>18)); ?>
 		<?php echo $form->error($model,'kewarganegaraan'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'foto'); ?>
-		<?php echo $form->textField($model,'foto'); ?>
+		<?php echo $form->textField($model,'foto',array('size'=>60,'maxlength'=>150)); ?>
 		<?php echo $form->error($model,'foto'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'sidik_jari'); ?>
-		<?php echo $form->textField($model,'sidik_jari'); ?>
+		<?php echo $form->textField($model,'sidik_jari',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'sidik_jari'); ?>
 	</div>
 
@@ -100,6 +100,12 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'id_cacat'); ?>
+		<?php echo $form->textField($model,'id_cacat'); ?>
+		<?php echo $form->error($model,'id_cacat'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'id_status_kependudukan'); ?>
 		<?php echo $form->textField($model,'id_status_kependudukan'); ?>
 		<?php echo $form->error($model,'id_status_kependudukan'); ?>
@@ -118,12 +124,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'id_cacat'); ?>
-		<?php echo $form->textField($model,'id_cacat'); ?>
-		<?php echo $form->error($model,'id_cacat'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'disimpan'); ?>
 		<?php echo $form->textField($model,'disimpan'); ?>
 		<?php echo $form->error($model,'disimpan'); ?>
@@ -135,9 +135,8 @@
 		<?php echo $form->error($model,'diperbarui'); ?>
 	</div>
 
-
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Submit'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

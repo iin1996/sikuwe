@@ -12,6 +12,7 @@
     <meta name="author" content="Rina Purnama">
 
     <!-- gaya tampilan-->
+    <link id="bs-css" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/bootstrap-cerulean.min.css" rel="stylesheet">
     <link id="bs-css" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/bootstrap.css" rel="stylesheet">
 
     <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/sikuwe-app.css" rel="stylesheet">
