@@ -59,7 +59,11 @@
             <div>
     <ul class="breadcrumb">
         <li>
-            <a href="./"><i class="glyphicon glyphicon-home"></i> Beranda</a>
+            <a href="./"><i class="glyphicon glyphicon-home"></i> <?php 
+            $this->widget('zii.widgets.CBreadcrumbs', array(
+                'links'=>$this->breadcrumbs,
+            )); ?>
+            </a>
         </li>
     </ul>
 </div>
@@ -90,117 +94,16 @@
 
 <div class="row">
 
-    <div class="box col-md-4">
-        <div class="box-inner">
-            <div class="box-header well" data-original-title="">
-                <h2><i class="glyphicon glyphicon-user"></i> Member Activity</h2>
+<?php 
 
-                <div class="box-icon">
-                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                            class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-close btn-round btn-default"><i
-                            class="glyphicon glyphicon-remove"></i></a>
-                </div>
-            </div>
-            <div class="box-content">
-                <div class="box-content">
-                    <ul class="dashboard-list">
-                        <li>
-                            <a href="#">
-                                <img class="dashboard-avatar" alt="Rina Purnama"
-                                     src="http://www.gravatar.com/avatar/f0ea51fa1e4fae92608d8affee12f67b.png?s=50"></a>
-                            <strong>Name:</strong> <a href="#">Rina Purnama
-                            </a><br>
-                            <strong>Since:</strong> 17/05/2014<br>
-                            <strong>Status:</strong> <span class="label-success label label-default">Approved</span>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="dashboard-avatar" alt="Sheikh Heera"
-                                     src="http://www.gravatar.com/avatar/3232415a0380253cfffe19163d04acab.png?s=50"></a>
-                            <strong>Name:</strong> <a href="#">Sheikh Heera
-                            </a><br>
-                            <strong>Since:</strong> 17/05/2014<br>
-                            <strong>Status:</strong> <span class="label-warning label label-default">Pending</span>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="dashboard-avatar" alt="Abdullah"
-                                     src="http://www.gravatar.com/avatar/46056f772bde7c536e2086004e300a04.png?s=50"></a>
-                            <strong>Name:</strong> <a href="#">Abdullah
-                            </a><br>
-                            <strong>Since:</strong> 25/05/2014<br>
-                            <strong>Status:</strong> <span class="label-default label label-danger">Banned</span>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="dashboard-avatar" alt="Sana Amrin"
-                                     src="http://www.gravatar.com/avatar/hash"></a>
-                            <strong>Name:</strong> <a href="#">Sana Amrin</a><br>
-                            <strong>Since:</strong> 17/05/2014<br>
-                            <strong>Status:</strong> <span class="label label-info">Updates</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/span-->
+//$this->renderPartial('//layouts/member'); 
 
-    <div class="box col-md-4">
-        <div class="box-inner homepage-box">
-            <div class="box-header well" data-original-title="">
-                <h2><i class="glyphicon glyphicon-list-alt"></i> Open Source</h2>
+//$this->renderPartial('//layouts/opensource'); 
 
-                <div class="box-icon">
-                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                            class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-close btn-round btn-default"><i
-                            class="glyphicon glyphicon-remove"></i></a>
-                </div>
-            </div>
-            <div class="box-content">
-                <h3>SIKUWE memakai lisensi sumber terbuka</h3>
-                <a class="btn btn-default center-block col-md-6" title="GitHub"
-                   href="https://github.com" target="_blank"><i class="icon-edit"></i> Lihat di Github</a>
+//$this->renderPartial('//layouts/statistik'); 
 
-                <br/>
+?>
 
-                <p>Terimakasih telah membantu pengembangan SIKUWE <a href="http://github.com/"
-                                                                                  target="_blank">GitHub</a>.</p>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="box col-md-4">
-        <div class="box-inner">
-            <div class="box-header well" data-original-title="">
-                <h2><i class="glyphicon glyphicon-list"></i> Statistik mingguan</h2>
-
-                <div class="box-icon">
-                    <a href="#" class="btn btn-setting btn-round btn-default"><i
-                            class="glyphicon glyphicon-cog"></i></a>
-                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                            class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-close btn-round btn-default"><i
-                            class="glyphicon glyphicon-remove"></i></a>
-                </div>
-            </div>
-            <div class="box-content">
-                <ul class="dashboard-list">
-                    <li>
-                        <a href="#">
-                            <i class="glyphicon glyphicon-arrow-down"></i>
-                            <span class="red">15</span>
-                            Pendaftaran baru
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--/span-->
 </div><!--/row-->
     <!-- akhir kontent -->
     </div><!--/#content.col-md-0-->
@@ -208,25 +111,6 @@
 
     <hr>
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-         aria-hidden="true">
-
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">×</button>
-                    <h3>Pengaturan</h3>
-                </div>
-                <div class="modal-body">
-                    <p>Pengaturan dapat diatur di sini...</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-default" data-dismiss="modal">Tutup</a>
-                    <a href="#" class="btn btn-primary" data-dismiss="modal">Simpan perubahan</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <footer class="row">
         <p class="col-md-9 col-sm-9 col-xs-12 copyright">&copy; <a href="" target="_blank">Rina Purnama</a> 2014</p>

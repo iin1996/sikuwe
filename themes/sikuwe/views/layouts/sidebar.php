@@ -16,9 +16,9 @@
                             array('label'=>'Beranda', 'url'=>'./'),
                             // 'Products' menu item will be selected no matter which tag parameter value is since it's not specified.
                             array('label'=>'Entri Data', 'url'=>array('penduduk/admin/create')),
-                            array('label'=>'Penduduk', 'url'=>array('penduduk/index')),
+                            array('label'=>'Penduduk', 'url'=>array('penduduk/admin/index')),
                             array('label'=>'Panduan', 'itemOptions'=>array('class'=>'nav-header hidden-md')),
-                            array('label'=>'Berkeliling', 'url'=>array('penduduk/index')),
+                            array('label'=>'Berkeliling', 'url'=>array('penduduk/admin/admin')),
                             array('label'=>'Login', 'url'=>array('user/login'), 'visible'=>Yii::app()->user->isGuest),
                         ),
                     ));

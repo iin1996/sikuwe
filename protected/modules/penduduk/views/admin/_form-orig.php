@@ -8,7 +8,6 @@
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'penduduk-form',
-	'focus'=>array($model,'nik'),
 	'enableAjaxValidation'=>false,
 )); ?>
 
@@ -17,40 +16,26 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'NIK'); ?>
+		<?php echo $form->labelEx($model,'nik'); ?>
 		<?php echo $form->textField($model,'nik',array('size'=>16,'maxlength'=>16)); ?>
 		<?php echo $form->error($model,'nik'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Nama Lengkap'); ?>
+		<?php echo $form->labelEx($model,'nama'); ?>
 		<?php echo $form->textField($model,'nama',array('size'=>60,'maxlength'=>75)); ?>
 		<?php echo $form->error($model,'nama'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Tempat Lahir'); ?>
+		<?php echo $form->labelEx($model,'tempat_lahir'); ?>
 		<?php echo $form->textField($model,'tempat_lahir',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'tempat_lahir'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Tanggal Lahir'); ?>
-		<?php $this->widget('zii.widgets.jui.CJuiDatePicker',array(
-		    'name'=>'tanggal_lahir',
-		    //'scriptFile'=>'jquery-ui.min.js',
-		    //'scriptUrl'=>Yii::app()->theme->baseUrl.'/assets/jui/js/',
-		    'language'=>'id',
-		    // additional javascript options for the date picker plugin
-		    'options'=>array(
-		        'showAnim'=>'fold',
-		        'changeMonth'=>true,
-		        'changeYear'=>true,
-		    ),
-		    'htmlOptions'=>array(
-		        'style'=>'height:20px;'
-		    ),
-		)); ?>
+		<?php echo $form->labelEx($model,'tanggal_lahir'); ?>
+		<?php echo $form->textField($model,'tanggal_lahir'); ?>
 		<?php echo $form->error($model,'tanggal_lahir'); ?>
 	</div>
 

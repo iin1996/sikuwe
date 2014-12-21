@@ -3,7 +3,7 @@
 /* @var $model Penduduk */
 
 $this->breadcrumbs=array(
-	'Penduduks'=>array('index'),
+	'Penduduk'=>array('index'),
 	$model->id_penduduk=>array('view','id'=>$model->id_penduduk),
 	'Update',
 );
