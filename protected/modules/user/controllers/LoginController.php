@@ -2,6 +2,8 @@
 
 class LoginController extends Controller
 {
+	public $layout='//layouts/auth';
+
 	public $defaultAction = 'login';
 
 	/**

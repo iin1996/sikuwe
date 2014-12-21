@@ -3,6 +3,8 @@
 /* @var $model LoginForm */
 /* @var $form CActiveForm  */
 
+//$this->renderPartial('//user/login');
+
 $this->pageTitle=Yii::app()->name . ' - Login';
 $this->breadcrumbs=array(
 	'Login',
