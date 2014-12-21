@@ -12,7 +12,7 @@ return array(
 	'theme'=>'sikuwe',
 
 	// preloading 'log' component
-	'preload'=>array('log'),
+	'preload'=>array('bootstrap','log'),
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -78,6 +78,11 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>false,
 		),
+
+		'bootstrap'=>array(
+		        'class'=>'ext.bootstrap.components.Bootstrap', // assuming you extracted bootstrap under extensions
+		    ),
+
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(

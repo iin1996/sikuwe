@@ -1,8 +1,5 @@
 <?php
 $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Login");
-$this->breadcrumbs=array(
-	UserModule::t("Login"),
-);
 ?>
 
 <div class="ch-container">
@@ -17,56 +14,63 @@ $this->breadcrumbs=array(
 
     <div class="row">
         <div class="well col-md-5 center login-box">
-            <div class="alert alert-info">
-                Silakan masuk dengan nama pengguna dan sandi Anda.
-            </div>
-			<?php echo CHtml::beginForm($htmlOptions = array('class' => 'form-horizontal', );); ?> 
-			<p class="note"><?php echo UserModule::t('Fields with <span class="required">*</span> are required.'); ?></p>           
-			<?php echo CHtml::errorSummary($model); ?>
+		    <div class="alert alert-info">
+		                Silakan masuk dengan nama pengguna dan sandi Anda.
+		    </div>
+
+				<?php $form = $this->beginWidget('CActiveForm', array(
+				        'id'=>'verticalForm',
+				        //'type' => 'inline',
+				        'htmlOptions'=>array('class'=> 'form-horizontal'),
+				)); ?>
+
+
                 <fieldset>
-                    <div class="input-group input-group-lg">
+                	<div class="input-group input-group-lg">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user red"></i></span>
-                        <!-- <input type="text" class="form-control" placeholder="Nama Pengguna"> -->
-						<?php echo CHtml::activeLabelEx($model,'username', array('class' => 'form-control','placeholder' => 'Nama Pengguna' );); ?>
-						<?php echo CHtml::activeTextField($model,'username') ?>                        
+                    	<?php echo $form->textField($model,'username', array('class'=>'form-control','placeholder'=>'Nama Pengguna') ); ?>
+				    <br>
                     </div>
                     <div class="clearfix"></div><br>
 
                     <div class="input-group input-group-lg">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock red"></i></span>
-                        <!-- <input type="password" class="form-control" placeholder="Sandi"> -->
-						<?php echo CHtml::activeLabelEx($model,'password', array('class' => 'form-control', 'placeholder' => 'Sandi');); ?>
-						<?php echo CHtml::activePasswordField($model,'password') ?>
+                    	<?php echo $form->passwordField($model,'password', array('class'=>'form-control','placeholder'=>'Sandi') ); ?>
                     </div>
-                    <div class="clearfix"></div>
+                    <div class="clearfix"></div>				    
 
                     <div class="input-prepend">
-                        <!-- <label class="remember" for="remember"><input type="checkbox" id="remember"> Ingat saya</label> -->
-						<?php echo CHtml::activeCheckBox($model,'rememberMe', array('class' => 'remember', );); ?>
-						<?php echo CHtml::activeLabelEx($model,'rememberMe'); ?>
-			
+                        <label class="remember" for="remember">
+                    	<?php echo $form->checkbox($model,'rememberMe', array('id' => 'checks'));?> Ingat saya</label>  
                     </div>
-                    <div class="clearfix"></div>
+                    <div class="clearfix"></div>				    
+				    
+				    <div><?php echo CHtml::link(UserModule::t("Lupa kata sandi?"),Yii::app()->getModule('user')->recoveryUrl); ?></div>
+				    <br>
+					<div class="row buttons">
+							<?php echo CHtml::submitButton('Login', array('class'=>'btn btn-primary')); ?>
+					</div>   
 
-				<p class="hint">
-				<?php echo CHtml::link(UserModule::t("Register"),Yii::app()->getModule('user')->registrationUrl); ?> | <?php echo CHtml::link(UserModule::t("Lost Password?"),Yii::app()->getModule('user')->recoveryUrl); ?>
-				</p>
+				    <?php if(Yii::app()->user->hasFlash('loginMessage')): ?>
+				        <div class="alert alert-success">
+				            <i class="fa fa-check"></i> <?php echo Yii::app()->user->getFlash('loginMessage'); ?>
+				        </div>
 
-                    <p class="center col-md-5">
-                        <!-- <button type="submit" class="btn btn-primary">Masuk</button> -->
-						<?php  echo CHtml::submitButton(UserModule::t("Login"), array('class'=>'btn btn-primary btn-large')); ?>
-                    </p>
+
+				    <?php endif; ?>  
                 </fieldset>
-			<?php echo CHtml::endForm(); ?>
+
+				<?php $this->endWidget(); unset($form);?>    
+
         </div>
         <!--/span-->
+
     </div><!--/row-->
 </div><!--/fluid-row-->
 
-</div><!--/.fluid-container-->
+</div><!--/.fluid-container-->            
 
-
-<?php
+<?php 
 $form = new CForm(array(
     'elements'=>array(
         'username'=>array(
