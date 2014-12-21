@@ -366,3 +366,94 @@ Stack trace:
 REQUEST_URI=/yii/sikuwe/index.php?r=gii/crud
 HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=gii/crud
 ---
+2014/12/21 21:09:26 [error] [exception.CException] exception 'CException' with message 'Property "CMenu.type" is not defined.' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CComponent.php:174
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWidgetFactory.php(162): CComponent->__set('type', 'pills')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.CMe...', Array)
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CMe...', Array)
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/themes/sikuwe/views/layouts/sidebar.php(22): CBaseController->widget('zii.widgets.CMe...', Array)
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/mnt/home/samsu...')
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/mnt/home/samsu...', NULL, true)
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(870): CBaseController->renderFile('/mnt/home/samsu...', NULL, true)
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/themes/sikuwe/views/layouts/main.php(47): CController->renderPartial('//layouts/sideb...')
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/mnt/home/samsu...')
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/mnt/home/samsu...', Array, true)
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/mnt/home/samsu...', Array, true)
+#11 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#12 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#13 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(207): COutputProcessor->run()
+#14 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#15 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/themes/sikuwe/views/layouts/column1.php(6): CBaseController->endContent()
+#16 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/mnt/home/samsu...')
+#17 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/mnt/home/samsu...', Array, true)
+#18 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(785): CBaseController->renderFile('/mnt/home/samsu...', Array, true)
+#19 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/controllers/SiteController.php(32): CController->render('index')
+#20 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#21 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#22 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#23 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#25 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#26 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/yii/sikuwe/
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php
+---
+2014/12/21 21:33:58 [error] [php] Invalid argument supplied for foreach() (/mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/helpers/CHtml.php:2208)
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/zii/widgets/CMenu.php(172): CMenu->renderMenuRecursive()
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/zii/widgets/CMenu.php(159): CMenu->renderMenu()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(174): CMenu->run()
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/themes/sikuwe/views/layouts/sidebar.php(24): AdminController->widget()
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(96): AdminController->renderInternal()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(870): AdminController->renderFile()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/themes/sikuwe/views/layouts/main.php(47): AdminController->renderPartial()
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require()
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(96): AdminController->renderInternal()
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/widgets/CContentDecorator.php(77): AdminController->renderFile()
+#11 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#12 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#13 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(207): CContentDecorator->run()
+#14 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(301): AdminController->endWidget()
+#15 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/themes/sikuwe/views/layouts/column2.php(22): AdminController->endContent()
+#16 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require()
+#17 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(96): AdminController->renderInternal()
+#18 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(785): AdminController->renderFile()
+#19 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/penduduk/controllers/AdminController.php(79): AdminController->render()
+#20 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): AdminController->actionCreate()
+#21 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#22 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): AdminController->runAction()
+#23 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#24 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#25 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): AdminController->filterAccessControl()
+#26 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#27 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#28 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): AdminController->runActionWithFilters()
+#29 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): AdminController->run()
+#30 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#31 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#32 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/admin/create
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/themes/sikuwe/views/layouts/sidebar.php (24)
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/themes/sikuwe/views/layouts/main.php (47)
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/themes/sikuwe/views/layouts/column2.php (22)
+2014/12/21 21:35:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/site/index".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/site/i...')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/site/index
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=penduduk/admin/create
+---
+2014/12/21 21:39:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/site/index".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/site/i...')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/site/index
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=penduduk/admin/create
+---

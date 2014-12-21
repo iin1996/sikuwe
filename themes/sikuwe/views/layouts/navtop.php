@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"> <img alt="Logo SIKUWE" src="img/logo20.png" class="hidden-xs"/>
+            <a class="navbar-brand" href="./"> <img alt="Logo SIKUWE" src="img/logo20.png" class="hidden-xs"/>
                 <span>SIKUWE</span></a>
 
             <!-- awal user dropdown -->

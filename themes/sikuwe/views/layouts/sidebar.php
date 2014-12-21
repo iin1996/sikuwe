@@ -5,18 +5,24 @@
                     <div class="nav-sm nav nav-stacked">
 
                     </div>
-                    <ul class="nav nav-pills nav-stacked main-menu">
-                        <li class="nav-header">Menu utama</li>
-                        <li><a class="ajax-link" href="./"><i class="glyphicon glyphicon-home"></i><span> Beranda</span></a></li>
-                        <li><a class="ajax-link" href="entri.html"><i class="glyphicon glyphicon-edit"></i><span> Entri Data</span></a></li>
-                        <li><a class="ajax-link" href="penduduk.html"><i class="glyphicon glyphicon-user"></i><span> Penduduk</span></a></li>
-                        <li><a class="ajax-link" href="statistik.html"><i class="glyphicon glyphicon-list-alt"></i><span> Statistik</span></a></li>
-                        <li class="nav-header hidden-md">Panduan</li>
-                        <li><a href="tour.html"><i class="glyphicon glyphicon-globe"></i><span> Berkeliling</span></a></li>
-                        <li><a class="ajax-link" href="icon.html"><i
-                                    class="glyphicon glyphicon-star"></i><span> Icons</span></a></li>
-                    </ul>
-                    <label id="for-is-ajax" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label>
+                    <?php
+                    $this->widget('zii.widgets.CMenu', array(
+                        //'type'=>'pills',
+                        'htmlOptions'=>array('class'=>'nav nav-pills nav-stacked main-menu'),
+                        'items'=>array(
+                            // Important: you need to specify url as 'controller/action',
+                            // not just as 'controller' even if default acion is used.
+                            array('label'=>'Menu utama', 'itemOptions'=>array('class'=>'nav-header')),
+                            array('label'=>'Beranda', 'url'=>'./'),
+                            // 'Products' menu item will be selected no matter which tag parameter value is since it's not specified.
+                            array('label'=>'Entri Data', 'url'=>array('penduduk/admin/create')),
+                            array('label'=>'Penduduk', 'url'=>array('penduduk/index')),
+                            array('label'=>'Panduan', 'itemOptions'=>array('class'=>'nav-header hidden-md')),
+                            array('label'=>'Berkeliling', 'url'=>array('penduduk/index')),
+                            array('label'=>'Login', 'url'=>array('user/login'), 'visible'=>Yii::app()->user->isGuest),
+                        ),
+                    ));
+                    ?>
                 </div>
             </div>
         </div>
