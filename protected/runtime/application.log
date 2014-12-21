@@ -650,3 +650,366 @@ Stack trace:
 REQUEST_URI=/yii/sikuwe/index.php?r=user/user/logout
 HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=user/profile/profile
 ---
+2014/12/22 00:30:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('profile')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('profile')
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('user/user/profi...')
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=user/user/profile/profile
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=user/login
+---
+2014/12/22 00:54:01 [error] [php] Illegal string offset 'label' (/mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/zii/widgets/CMenu.php:263)
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(173): LoginController->createWidget()
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/themes/sikuwe/views/layouts/sidebar.php(25): LoginController->widget()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require()
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(96): LoginController->renderInternal()
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(870): LoginController->renderFile()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/themes/sikuwe/views/layouts/main.php(47): LoginController->renderPartial()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(96): LoginController->renderInternal()
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/widgets/CContentDecorator.php(77): LoginController->renderFile()
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#11 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(207): CContentDecorator->run()
+#12 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(301): LoginController->endWidget()
+#13 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/themes/sikuwe/views/layouts/column1.php(6): LoginController->endContent()
+#14 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require()
+#15 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CBaseController.php(96): LoginController->renderInternal()
+#16 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(785): LoginController->renderFile()
+#17 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/controllers/LoginController.php(28): LoginController->render()
+#18 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): LoginController->actionLogin()
+#19 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#20 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): LoginController->runAction()
+#21 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): LoginController->runActionWithFilters()
+#22 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): LoginController->run()
+#23 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#24 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/sikuwe/index.php?r=user/login
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/themes/sikuwe/views/layouts/sidebar.php (25)
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/themes/sikuwe/views/layouts/main.php (47)
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/themes/sikuwe/views/layouts/column1.php (6)
+2014/12/22 01:03:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('login')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=login
+---
+2014/12/22 01:04:19 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "updateSession".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CComponent.php:266
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/models/User.php(202): CComponent->__call('updateSession', Array)
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/models/User.php(202): CWebUser->updateSession()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(1066): User->afterSave()
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(796): CActiveRecord->update(NULL)
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/controllers/LoginController.php(36): CActiveRecord->save()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/controllers/LoginController.php(20): LoginController->lastViset()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): LoginController->actionLogin()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#11 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('user/login')
+#12 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=user/login
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=user/login
+---
+2014/12/22 01:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/penduduk/admin/create".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('user/penduduk/a...')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=user/penduduk/admin/create
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=user/login
+---
+2014/12/22 01:11:35 [error] [php] Undefined variable: content (/mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/views/site/login.php:2)
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(870): SiteController->renderFile()
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/controllers/SiteController.php(98): SiteController->render()
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): SiteController->runAction()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/sikuwe/index.php?r=site/login
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/views/site/login.php (2)
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/controllers/SiteController.php (98)
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php (13)
+2014/12/22 01:11:46 [error] [php] Undefined variable: content (/mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/views/site/login.php:2)
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(870): SiteController->renderFile()
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/controllers/SiteController.php(98): SiteController->render()
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): SiteController->runAction()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/sikuwe/index.php?r=site/login
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/views/site/login.php (2)
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/controllers/SiteController.php (98)
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php (13)
+2014/12/22 01:12:00 [error] [php] Undefined variable: content (/mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/views/site/login.php:2)
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(870): SiteController->renderFile()
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/controllers/SiteController.php(98): SiteController->render()
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): SiteController->runAction()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/sikuwe/index.php?r=site/login
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/views/site/login.php (2)
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/controllers/SiteController.php (98)
+in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php (13)
+2014/12/22 01:21:20 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "updateSession".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CComponent.php:266
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/models/User.php(202): CComponent->__call('updateSession', Array)
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/models/User.php(202): CWebUser->updateSession()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(1066): User->afterSave()
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(796): CActiveRecord->update(NULL)
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/controllers/LoginController.php(36): CActiveRecord->save()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/controllers/LoginController.php(20): LoginController->lastViset()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): LoginController->actionLogin()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#11 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('user/login')
+#12 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=user/login
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=user/login
+---
+2014/12/22 01:40:42 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "updateSession".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CComponent.php:266
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/models/User.php(202): CComponent->__call('updateSession', Array)
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/models/User.php(202): CWebUser->updateSession()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(1066): User->afterSave()
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(796): CActiveRecord->update(NULL)
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/controllers/LoginController.php(36): CActiveRecord->save()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/protected/modules/user/controllers/LoginController.php(20): LoginController->lastViset()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): LoginController->actionLogin()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#11 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('user/login')
+#12 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=user/login
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=user/login
+---
+2014/12/22 01:49:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/penduduk/admin/create".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('user/penduduk/a...')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=user/penduduk/admin/create
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=user/login
+---
+2014/12/22 01:49:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/index".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/index')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/index
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=site/login
+---
+2014/12/22 01:49:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/index".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/index')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/index
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=penduduk/index
+---
+2014/12/22 01:49:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "penduduk/view".' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/view')
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/view
+---
+2014/12/22 01:50:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php:337
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('view')
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('penduduk/admin/...')
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=penduduk/admin/view
+---
+2014/12/22 01:55:30 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.penduduk.Keluarga" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/YiiBase.php:318
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/generators/form/FormCode.php(58): YiiBase::import('application.mod...', true)
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/validators/CInlineValidator.php(43): FormCode->validateModel('model', Array)
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/validators/CValidator.php(214): CInlineValidator->validateAttribute(Object(FormCode), 'model')
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CModel.php(158): CValidator->validate(Object(FormCode), NULL)
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(160): CModel->validate()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#11 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/form')
+#12 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=gii/form
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=gii/form
+---
+2014/12/22 01:56:29 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.penduduk" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/YiiBase.php:318
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/generators/crud/CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/validators/CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/validators/CValidator.php(214): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(160): CModel->validate()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#11 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/crud')
+#12 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=gii/crud
+---
+2014/12/22 01:57:02 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.penduduk" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/YiiBase.php:318
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/generators/crud/CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/validators/CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/validators/CValidator.php(214): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(160): CModel->validate()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#11 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/crud')
+#12 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=gii/crud
+---
+2014/12/22 01:57:18 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.penduduk" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/YiiBase.php:318
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/generators/crud/CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/validators/CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/validators/CValidator.php(214): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(160): CModel->validate()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#11 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/crud')
+#12 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=gii/crud
+---
+2014/12/22 01:58:43 [error] [exception.CException] exception 'CException' with message 'Alias "penduduk.Keluarga" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/YiiBase.php:318
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/generators/crud/CrudCode.php(59): YiiBase::import('penduduk.Keluar...', true)
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/validators/CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/validators/CValidator.php(214): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(160): CModel->validate()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#11 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/crud')
+#12 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=gii/crud
+---
+2014/12/22 01:59:07 [error] [exception.CException] exception 'CException' with message 'Alias "Penduduk.models.keluarga" is invalid. Make sure it points to an existing directory or file.' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/YiiBase.php:343
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/generators/crud/CrudCode.php(59): YiiBase::import('Penduduk.models...', true)
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/validators/CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/validators/CValidator.php(214): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(160): CModel->validate()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#11 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/crud')
+#12 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=gii/crud
+---
+2014/12/22 02:00:01 [error] [exception.CException] exception 'CException' with message 'Alias "modules.penduduk.models.Keluarga" is invalid. Make sure it points to an existing directory or file.' in /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/YiiBase.php:343
+Stack trace:
+#0 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/generators/crud/CrudCode.php(59): YiiBase::import('modules.pendudu...', true)
+#1 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/validators/CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/validators/CValidator.php(214): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(160): CModel->validate()
+#5 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#11 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/crud')
+#12 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /mnt/home/samsul/Publik/html.studio/yii-1.1.12.b600af/sikuwe/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/sikuwe/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/yii/sikuwe/index.php?r=gii/crud
+---

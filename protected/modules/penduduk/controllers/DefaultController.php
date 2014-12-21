@@ -6,4 +6,15 @@ class DefaultController extends Controller
 	{
 		$this->render('index');
 	}
+
+	/**
+	 * @return array action filters
+	 */
+	public function filters()
+	{
+		return array(
+			'rights', // perform access control for CRUD operations
+		);
+	}
+
 }

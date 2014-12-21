@@ -8,12 +8,12 @@
                     <?php
                     $this->widget('zii.widgets.CMenu', array(
                         //'type'=>'pills',
-                        'htmlOptions'=>array('class'=>'nav nav-pills nav-stacked main-menu'),
+                        'htmlOptions'=>array('class'=>'nav nav-pills nav-stacked main-menu'), 
                         'items'=>array(
                             // Important: you need to specify url as 'controller/action',
                             // not just as 'controller' even if default acion is used.
                             array('label'=>'Menu utama', 'itemOptions'=>array('class'=>'nav-header')),
-                            array('<i class="glyphicon glyphicon-home"></i>','label'=>'Beranda', 'url'=>'./'),
+                            array('label'=>'Beranda', 'url'=>'./'),
                             // 'Products' menu item will be selected no matter which tag parameter value is since it's not specified.
                             array('label'=>'Entri Data', 'url'=>array('penduduk/admin/create')),
                             array('label'=>'Penduduk', 'url'=>array('penduduk/index')),
