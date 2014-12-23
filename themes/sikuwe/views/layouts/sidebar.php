@@ -20,6 +20,7 @@
                             array('label'=>'Panduan', 'itemOptions'=>array('class'=>'nav-header hidden-md')),
                             array('label'=>'Berkeliling', 'url'=>array('penduduk/admin/admin')),
                             array('label'=>'Login', 'url'=>array('user/login'), 'visible'=>Yii::app()->user->isGuest),
+                            $this->menu,
                         ),
                     ));
                     ?>

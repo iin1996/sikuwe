@@ -7,10 +7,10 @@ $this->breadcrumbs=array(
 	'Create',
 );
 
-$this->menu=array(
-	array('label'=>'List Penduduk', 'url'=>array('index')),
-	array('label'=>'Manage Penduduk', 'url'=>array('admin')),
-);
+//$this->menu=array(
+//	array('label'=>'List Penduduk', 'url'=>array('index')),
+//	array('label'=>'Manage Penduduk', 'url'=>array('admin')),
+//);
 ?>
 
 <h1>Create Penduduk</h1>

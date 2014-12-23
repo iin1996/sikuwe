@@ -57,15 +57,13 @@
         <div id="content" class="col-lg-10 col-sm-10">
             <!-- awal konten -->
             <div>
-    <ul class="breadcrumb">
-        <li>
-            <a href="./"><i class="glyphicon glyphicon-home"></i> <?php 
-            $this->widget('zii.widgets.CBreadcrumbs', array(
+    <div class="breadcrumb">
+
+            <?php $this->widget('zii.widgets.CBreadcrumbs', array(
                 'links'=>$this->breadcrumbs,
             )); ?>
-            </a>
-        </li>
-    </ul>
+
+    </div>
 </div>
 
 <div class="row">
