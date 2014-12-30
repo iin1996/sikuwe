@@ -13,12 +13,12 @@
                             // Important: you need to specify url as 'controller/action',
                             // not just as 'controller' even if default acion is used.
                             array('label'=>'Menu utama', 'itemOptions'=>array('class'=>'nav-header')),
-                            array('label'=>'Beranda', 'url'=>'./'),
+                            array('label'=>'Beranda', 'url'=>Yii::app()->baseUrl),
                             // 'Products' menu item will be selected no matter which tag parameter value is since it's not specified.
-                            array('label'=>'Entri Data', 'url'=>array('penduduk/admin/create')),
-                            array('label'=>'Penduduk', 'url'=>array('penduduk/admin/index')),
+                            array('label'=>'Entri Data', 'url'=>array('admin/create')),
+                            array('label'=>'Penduduk', 'url'=>array('admin/index')),
                             array('label'=>'Panduan', 'itemOptions'=>array('class'=>'nav-header hidden-md')),
-                            array('label'=>'Berkeliling', 'url'=>array('penduduk/admin/admin')),
+                            array('label'=>'Berkeliling', 'url'=>array('admin/admin')),
                             array('label'=>'Login', 'url'=>array('user/login'), 'visible'=>Yii::app()->user->isGuest),
                             $this->menu,
                         ),

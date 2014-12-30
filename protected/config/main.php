@@ -4,7 +4,7 @@
 // Yii::setPathOfAlias('local','path/to/local-folder');
 Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 Yii::setPathOfAlias('booster', dirname(__FILE__).'/../extensions/booster');
-// This is the main Web application configuration. Any writable
+//This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
@@ -78,24 +78,25 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>false,
 		),
-
+		/*
 		'bootstrap'=>array(
 		        'class'=>'ext.bootstrap.components.Bootstrap', // assuming you extracted bootstrap under extensions
 		    ),
+		*/
 		'booster'=>array(
 				'class'=>'ext.booster.components.Booster',
-		),    
+			),    
 
 		// uncomment the following to enable URLs in path-format
 		
 		'urlManager'=>array(
-			//'urlFormat'=>'path',
+			'urlFormat'=>'path',
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 				),
-			'showScriptName'=>false,
+			'showScriptName'=>true,
 			),
 		
 		/*
@@ -123,14 +124,18 @@ return array(
 			'routes'=>array(
 				array(
 					'class'=>'CFileLogRoute',
-					'levels'=>'error, warning',
+					'levels'=>'trace, info, error, warning, vardump',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+				
 				array(
 					'class'=>'CWebLogRoute',
+					'enabled'=> YII_DEBUG,
+					'levels'=>'trace, error, warning, notice',
+					'categories'=>'application',
+					'showInFireBug'=>false,
 				),
-				*/
+
 			),
 		),
 	),

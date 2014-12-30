@@ -16,12 +16,14 @@
     <link id="bs-css" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/bootstrap.css" rel="stylesheet"> 
 
     <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/sikuwe-app.css" rel="stylesheet">
-    <link href='<?php echo Yii::app()->theme->baseUrl ?>/assets/css/jquery.noty.css' rel='stylesheet'>
-    <link href='<?php echo Yii::app()->theme->baseUrl ?>/assets/css/noty_theme_default.css' rel='stylesheet'>
-    <link href='<?php echo Yii::app()->theme->baseUrl ?>/assets/css/elfinder.min.css' rel='stylesheet'>
-    <link href='<?php echo Yii::app()->theme->baseUrl ?>/assets/css/elfinder.theme.css' rel='stylesheet'>
-    <link href='<?php echo Yii::app()->theme->baseUrl ?>/assets/css/uploadify.css' rel='stylesheet'>
-    <link href='<?php echo Yii::app()->theme->baseUrl ?>/assets/css/animate.min.css' rel='stylesheet'>
+    <!--
+    <link href='<?php //echo Yii::app()->theme->baseUrl ?>/assets/css/jquery.noty.css' rel='stylesheet'>
+    <link href='<?php //echo Yii::app()->theme->baseUrl ?>/assets/css/noty_theme_default.css' rel='stylesheet'>
+    <link href='<?php //echo Yii::app()->theme->baseUrl ?>/assets/css/elfinder.min.css' rel='stylesheet'>
+    <link href='<?php //echo Yii::app()->theme->baseUrl ?>/assets/css/elfinder.theme.css' rel='stylesheet'>
+    <link href='<?php //echo Yii::app()->theme->baseUrl ?>/assets/css/uploadify.css' rel='stylesheet'>
+    <link href='<?php //echo Yii::app()->theme->baseUrl ?>/assets/css/animate.min.css' rel='stylesheet'>
+    -->
 
     <!-- jQuery -->
     <script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.min.js"></script>
