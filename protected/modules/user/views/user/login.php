@@ -48,7 +48,7 @@ $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Login");
 				    
 				    <div><?php echo CHtml::link(UserModule::t("Lupa kata sandi?"),Yii::app()->getModule('user')->recoveryUrl); ?></div>
 				    <br>
-					<div class="row buttons">
+					<div>
 							<?php echo CHtml::submitButton('Login', array('class'=>'btn btn-primary')); ?>
 					</div>   
 

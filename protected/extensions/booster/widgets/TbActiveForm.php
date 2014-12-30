@@ -733,9 +733,9 @@ class TbActiveForm extends CActiveForm {
 		if(isset($options['inline']) && $options['inline'])
 			$widgetOptions['labelOptions']['class'] = 'checkbox-inline';
 		
-		if (!isset($widgetOptions['template']))
+		/*if (!isset($widgetOptions['template']))
 			$widgetOptions['template'] = '{beginLabel}{input}{labelTitle}{endLabel}';
-
+		*/
 		if (!isset($widgetOptions['separator']))
 			$widgetOptions['separator'] = "\n";
 		

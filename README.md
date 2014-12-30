@@ -3,7 +3,13 @@ SIKUWE
 
 Dibuat sekedar untuk memenuhi tugas kuliah :-)
 
-Panduan belum sempet ditulis... 
+> CATATAN: Aplikasi ini tidak dibuat eksklusif, tidak akan diupdate secara berkelanjutan. Hanya sebagai media belajar :))
+
+## Kebutuhan
+
+  - Apache 2.x atau nGinx dengan php 5.x
+  - Mysql atau mariaDb
+  - wis kuwe tok, mulane si-kuwe
 
 ## Download
 

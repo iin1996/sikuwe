@@ -83,9 +83,13 @@ return array(
 		        'class'=>'ext.bootstrap.components.Bootstrap', // assuming you extracted bootstrap under extensions
 		    ),
 		*/
+		'bootstrap'=>array(
+				'class'=>'ext.bootstrap.components.Bootstrap',
+			),    
 		'booster'=>array(
 				'class'=>'ext.booster.components.Booster',
 			),    
+
 
 		// uncomment the following to enable URLs in path-format
 		

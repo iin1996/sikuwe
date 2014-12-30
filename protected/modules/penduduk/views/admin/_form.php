@@ -10,7 +10,7 @@
 <div class="row" style="padding-left: 15px;">
 <?php /** @var BootActiveForm $form */
 $form = $this->beginWidget('booster.widgets.TbActiveForm', array(
-    'id'=>'form-penduduk',
+    //'id'=>'form-penduduk',
     'type'=>'horizontal',
     //'htmlOptions'=>array('class'=>'well'),
 )); ?>
@@ -19,27 +19,21 @@ $form = $this->beginWidget('booster.widgets.TbActiveForm', array(
 <?php echo $form->textFieldGroup($model, 'nik', array('class'=>'span3')); ?>
 <?php echo $form->textFieldGroup($model, 'nama', array('class'=>'span3')); ?>
 <?php echo $form->textFieldGroup($model, 'tempat_lahir', array('class'=>'span3')); ?>
-<?php /*echo $form->dateFieldGroup($model, 'dateField', array(
-															//'format'=>'dd-mm-yyyy',
-															//'showButtonPanel'=>true,
-															//'showAnim'=>'fold',
-															//'language'=>'en',
-												),
-												//'hint'=>'Klik di dalam',
-												//'prepend'=>'<span class="fa fa-calendar"></span>'
-												//),
-				); */ ?>
+<?php /* echo $form->datePickerGroup($model, 'tanggal_lahir', array('wrapperhtmlOptions'=>array('class'=>'col-sm-5'),'widgetOptions'=>array('options'=>array('format'=>'dd-mm-yyyy')),); */ ?>
 <?php echo $form->textFieldGroup($model, 'kewarganegaraan', array('class'=>'span3')); ?>
-<?php echo $form->radioButtonListGroup($model, 'id_jenis_kelamin', array('Laki-Laki', 'Perempuan'));?>
-<?php echo $form->textFieldGroup($model, 'id_golongan_darah', array('class'=>'span3')); ?>
-<?php echo $form->textFieldGroup($model, 'id_agama', array('class'=>'span3')); ?>
-<?php echo $form->textFieldGroup($model, 'id_status_kawin', array('class'=>'span3')); ?>
-<?php echo $form->textFieldGroup($model, 'id_status_tinggal', array('class'=>'span3')); ?>
-<?php echo $form->textFieldGroup($model, 'id_pekerjaan', array('class'=>'span3')); ?>
-<?php echo $form->textFieldGroup($model, 'id_cacat', array('class'=>'span3')); ?>
-<?php echo $form->textFieldGroup($model, 'id_status_kependudukan', array('class'=>'span3')); ?>
-<?php echo $form->textFieldGroup($model, 'is_active', array('class'=>'span3')); ?>
-<?php echo $form->textFieldGroup($model, 'is_temporary', array('class'=>'span3')); ?>
+<?php echo $form->radioButtonListGroup($model, 'id_jenis_kelamin', array('widgetOptions'=>array('template'=>'{beginLabel}{input}{labelTitle}{endLabel}','data'=>array('Laki-Laki', 'Perempuan'))));?>
+<?php echo $form->dropDownListGroup($model, 'id_golongan_darah', array(
+									'widgetOptions'=>array(
+										'data'=>array('A','B','O','AB','A+','A-','AB+','AB-','B+','B-','O+','O-','Tidak Tahu')),'class'=>'span3'
+									)); ?>
+<?php echo $form->dropDownListGroup($model, 'id_agama', array('widgetOptions'=>array('data'=>array('Islam','Kristen','Katholik','Hindu','Budha','Konghucu','Aliran Kepercayaan','Aliran lainnya')),'class'=>'span3')); ?>
+<?php echo $form->dropDownListGroup($model, 'id_status_kawin', array('widgetOptions'=>array('data'=>array('Belum Kawin','Kawin','Cerai Hidup','Cerai Mati')),'class'=>'span3')); ?>
+<?php echo $form->dropDownListGroup($model, 'id_status_tinggal', array('widgetOptions'=>array('data'=>array('Tinggal Tetap','Tinggal di Luar Kota','Tinggal di Luar Provinsi','Tinggal di Luar Negeri')),'class'=>'span3')); ?>
+<?php echo $form->textFieldGroup($model, 'id_pekerjaan', array('hint'=>'Tuliskan pekerjaan di sini','class'=>'span3')); ?>
+<?php echo $form->dropDownListGroup($model, 'id_cacat', array('widgetOptions'=>array('data'=>array('Tidak Cacat','Cacat Fisik','Cacat Netra/Buta','Cacat Rungu/Wicara','Cacat Mental/Jiwa','Cacat Fisik dan Mental','Cacat Lainnya')),'class'=>'span3')); ?>
+<?php echo $form->dropDownListGroup($model, 'id_status_kependudukan', array('widgetOptions'=>array('data'=>array('Penduduk Asli/Tetap','Pendatang','Pindah','Meninggal')),'class'=>'span3')); ?>
+<?php //echo $form->textFieldGroup($model, 'is_active', array('class'=>'span3')); ?>
+<?php //echo $form->textFieldGroup($model, 'is_temporary', array('class'=>'span3')); ?>
 <div class="form-actions">
 <?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'type'=>'primary', 'label'=>$model->isNewRecord ? 'Buat baru' : 'Simpan',)); ?>
  </div>

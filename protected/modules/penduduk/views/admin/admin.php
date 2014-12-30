@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Penduduks</h1>
+<h1>Kelola Penduduk</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
@@ -40,12 +40,15 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 )); ?>
 </div><!-- search-form -->
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
+<?php //$this->widget('zii.widgets.grid.CGridView', array(
+	$this->widget('booster.widgets.TbGridView', array(
 	'id'=>'penduduk-grid',
+	'type'=>'striped bordered condensed',
 	'dataProvider'=>$model->search(),
+	'template'=>"{items}",
 	'filter'=>$model,
 	'columns'=>array(
-		'id_penduduk',
+		//'id_penduduk',
 		'nik',
 		'nama',
 		'tempat_lahir',
@@ -69,7 +72,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'diperbarui',
 		*/
 		array(
-			'class'=>'CButtonColumn',
+			'class'=>'booster.widgets.TbButtonColumn',
+			'htmlOptions'=>array('style'=>'width: 50px'),
 		),
 	),
 )); ?>

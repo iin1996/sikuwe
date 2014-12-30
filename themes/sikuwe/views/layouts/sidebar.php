@@ -20,7 +20,10 @@
                             array('label'=>'Penduduk', 'url'=>Yii::app()->getModule('penduduk')->pendudukAdminIndexUrl),
                             array('label'=>'Administratif', 'itemOptions'=>array('class'=>'nav-header hidden-md')),
                             array('label'=>'Kelola Data', 'url'=>Yii::app()->getModule('penduduk')->pendudukAdminAdminUrl),
+                            array('label'=>'User Menu', 'itemOptions'=>array('class'=>'nav-header hidden-md')),
                             array('label'=>'Login', 'url'=>Yii::app()->getModule('user')->loginUrl, 'visible'=>Yii::app()->user->isGuest),
+                            array('label'=>'Profil', 'url'=>Yii::app()->getModule('user')->profileUrl, 'visible'=>!Yii::app()->user->isGuest),
+                            array('label'=>'Logout', 'url'=>Yii::app()->getModule('user')->logoutUrl, 'visible'=>!Yii::app()->user->isGuest),
                             //$this->menu,
                         ),
                     ));
