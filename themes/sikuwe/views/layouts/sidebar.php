@@ -8,7 +8,8 @@
                     <?php
                     $this->widget('zii.widgets.CMenu', array(
                         //'type'=>'pills',
-                        'htmlOptions'=>array('class'=>'nav nav-pills nav-stacked main-menu'), 
+                        'htmlOptions'=>array('class'=>'nav nav-pills nav-stacked main-menu'),
+                        'encodeLabel'=>false, 
                         'items'=>array(
                             // Important: you need to specify url as 'controller/action',
                             // not just as 'controller' even if default acion is used.
@@ -18,8 +19,8 @@
                             array('label'=>'Entri Data', 'url'=>Yii::app()->getModule('penduduk')->pendudukAdminCreateUrl),
                             array('label'=>'Penduduk', 'url'=>Yii::app()->getModule('penduduk')->pendudukAdminIndexUrl),
                             array('label'=>'Administratif', 'itemOptions'=>array('class'=>'nav-header hidden-md')),
-                            array('label'=>'Edit Data', 'url'=>Yii::app()->getModule('penduduk')->pendudukAdminAdminUrl),
-                            array('label'=>'Login', 'url'=>array('user/login'), 'visible'=>Yii::app()->user->isGuest),
+                            array('label'=>'Kelola Data', 'url'=>Yii::app()->getModule('penduduk')->pendudukAdminAdminUrl),
+                            array('label'=>'Login', 'url'=>Yii::app()->getModule('user')->loginUrl, 'visible'=>Yii::app()->user->isGuest),
                             //$this->menu,
                         ),
                     ));
