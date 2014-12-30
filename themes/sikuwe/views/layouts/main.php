@@ -34,7 +34,7 @@
     <![endif]-->
 
     <!-- The fav icon -->
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/img/aja-protes-eh.png">
 
 </head>
 
@@ -126,27 +126,27 @@
 <script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/bootstrap.min.js"></script>
 
 <!-- librari untuk manajemen cookie 
-<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.cookie.js"></script> -->
+<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.cookie.js"></script> -->
 <!-- plugin tabel data 
-<script src='<?php echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.dataTables.min.js'></script> -->
+<script src='<?php //echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.dataTables.min.js'></script> -->
 <!-- select or dropdown enhancer 
-<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/bower_components/chosen/chosen.jquery.min.js"></script> -->
+<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/bower_components/chosen/chosen.jquery.min.js"></script> -->
 <!-- plugin untuk melihat galeri gambar
-<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/bower_components/colorbox/jquery.colorbox-min.js"></script> -->
+<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/bower_components/colorbox/jquery.colorbox-min.js"></script> -->
 <!-- plugin pemberitahuan 
-<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.noty.js"></script> -->
+<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.noty.js"></script> -->
 <!-- librari untuk membuat tabel responsif 
-<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/bower_components/responsive-tables/responsive-tables.js"></script> -->
+<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/bower_components/responsive-tables/responsive-tables.js"></script> -->
 <!-- plugin berkeliling
-<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script> -->
+<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script> -->
 <!-- plugin untuk autogrowing textarea 
-<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.autogrow-textarea.js"></script> -->
+<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.autogrow-textarea.js"></script> -->
 <!-- plugin untuk mengunggah banyak berkas 
-<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.uploadify-3.1.min.js"></script> -->
+<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.uploadify-3.1.min.js"></script> -->
 <!-- history.js for cross-browser state change on ajax 
-<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.history.js"></script> -->
-<!-- skrip aplikasi untuk versi demo SIKUWE-->
-<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/sikuwe.js"></script>
+<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.history.js"></script> -->
+<!-- skrip aplikasi untuk versi demo SIKUWE
+<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/js/sikuwe.js"></script>-->
 
 
 </body>

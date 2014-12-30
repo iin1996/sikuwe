@@ -15,7 +15,11 @@ class PendudukModule extends CWebModule
 			'penduduk.components.*',
 		));
 	}
-
+	
+	public $pendudukAdminCreateUrl = array("/penduduk/admin/create");
+	public $pendudukAdminIndexUrl = array("/penduduk/admin/index");
+	public $pendudukAdminAdminUrl = array("/penduduk/admin/admin");
+	
 	public function beforeControllerAction($controller, $action)
 	{
 		if(parent::beforeControllerAction($controller, $action))

@@ -55,7 +55,7 @@ class Penduduk extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('nik, nama, tempat_lahir, tanggal_lahir, kewarganegaraan, foto, sidik_jari, id_jenis_kelamin, id_golongan_darah, id_agama, id_status_kawin, id_status_tinggal, id_pendidikan, id_pekerjaan, id_status_kependudukan, is_active, is_temporary', 'required'),
-			array('id_jenis_kelamin, id_golongan_darah, id_agama, id_status_kawin, id_status_tinggal, id_pendidikan, id_pekerjaan, id_cacat, id_status_kependudukan, is_active, is_temporary, disimpan, diperbarui', 'numerical', 'integerOnly'=>true),
+			array('id_jenis_kelamin, id_golongan_darah, id_agama, id_status_kawin, id_status_tinggal, id_pendidikan, id_pekerjaan, id_cacat, id_status_kependudukan, is_active, is_temporary, disimpan, diperbarui', 'numerical', 'integerOnly'=>false),
 			array('nik', 'length', 'max'=>16),
 			array('nama', 'length', 'max'=>75),
 			array('tempat_lahir, sidik_jari', 'length', 'max'=>45),
@@ -63,7 +63,7 @@ class Penduduk extends CActiveRecord
 			array('foto', 'length', 'max'=>150),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id_penduduk, nik, nama, tempat_lahir, tanggal_lahir, kewarganegaraan, foto, sidik_jari, id_jenis_kelamin, id_golongan_darah, id_agama, id_status_kawin, id_status_tinggal, id_pendidikan, id_pekerjaan, id_cacat, id_status_kependudukan, is_active, is_temporary, disimpan, diperbarui', 'safe', 'on'=>'search'),
+			array('id_penduduk, nik, nama, tempat_lahir, tanggal_lahir, id_jenis_kelamin, id_golongan_darah, id_agama, id_status_kawin', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -85,7 +85,7 @@ class Penduduk extends CActiveRecord
 	{
 		return array(
 			'id_penduduk' => 'Id Penduduk',
-			'nik' => 'Nik',
+			'nik' => 'NIK',
 			'nama' => 'Nama',
 			'tempat_lahir' => 'Tempat Lahir',
 			'tanggal_lahir' => 'Tanggal Lahir',

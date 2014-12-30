@@ -19,19 +19,15 @@ $form = $this->beginWidget('booster.widgets.TbActiveForm', array(
 <?php echo $form->textFieldGroup($model, 'nik', array('class'=>'span3')); ?>
 <?php echo $form->textFieldGroup($model, 'nama', array('class'=>'span3')); ?>
 <?php echo $form->textFieldGroup($model, 'tempat_lahir', array('class'=>'span3')); ?>
-<?php /* echo $form->datePickerGroup($model, 'tanggal_lahir', array(
-													'options'=>array(
-															'format'=>'dd-mm-yyyy',
-															'showButtonPanel'=>true,
-															'showAnim'=>'fold',
+<?php /*echo $form->dateFieldGroup($model, 'dateField', array(
+															//'format'=>'dd-mm-yyyy',
+															//'showButtonPanel'=>true,
+															//'showAnim'=>'fold',
 															//'language'=>'en',
-															),
-													'wrapperHtmlOptions'=>array(
-														'class'=>'col-sm-5',
-														),
-													'hint'=>'Klik di dalam',
-													'prepend'=>'<span class="fa fa-calendar"></span>'
-													),
+												),
+												//'hint'=>'Klik di dalam',
+												//'prepend'=>'<span class="fa fa-calendar"></span>'
+												//),
 				); */ ?>
 <?php echo $form->textFieldGroup($model, 'kewarganegaraan', array('class'=>'span3')); ?>
 <?php echo $form->radioButtonListGroup($model, 'id_jenis_kelamin', array('Laki-Laki', 'Perempuan'));?>

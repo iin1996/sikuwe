@@ -15,12 +15,12 @@
                             array('label'=>'Menu utama', 'itemOptions'=>array('class'=>'nav-header')),
                             array('label'=>'Beranda', 'url'=>Yii::app()->baseUrl),
                             // 'Products' menu item will be selected no matter which tag parameter value is since it's not specified.
-                            array('label'=>'Entri Data', 'url'=>array('admin/create')),
-                            array('label'=>'Penduduk', 'url'=>array('admin/index')),
-                            array('label'=>'Panduan', 'itemOptions'=>array('class'=>'nav-header hidden-md')),
-                            array('label'=>'Berkeliling', 'url'=>array('admin/admin')),
+                            array('label'=>'Entri Data', 'url'=>Yii::app()->getModule('penduduk')->pendudukAdminCreateUrl),
+                            array('label'=>'Penduduk', 'url'=>Yii::app()->getModule('penduduk')->pendudukAdminIndexUrl),
+                            array('label'=>'Administratif', 'itemOptions'=>array('class'=>'nav-header hidden-md')),
+                            array('label'=>'Edit Data', 'url'=>Yii::app()->getModule('penduduk')->pendudukAdminAdminUrl),
                             array('label'=>'Login', 'url'=>array('user/login'), 'visible'=>Yii::app()->user->isGuest),
-                            $this->menu,
+                            //$this->menu,
                         ),
                     ));
                     ?>
