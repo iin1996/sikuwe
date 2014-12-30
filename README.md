@@ -3,4 +3,4 @@ SIKUWE
 
 Dibuat sekedar untuk memenuhi tugas kuliah :-)
 
-#eh
+Panduan belum sempet ditulis... 
