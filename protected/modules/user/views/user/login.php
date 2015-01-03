@@ -49,7 +49,7 @@ $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Login");
 				    <div><?php echo CHtml::link(UserModule::t("Lupa kata sandi?"),Yii::app()->getModule('user')->recoveryUrl); ?></div>
 				    <br>
 					<div>
-							<?php echo CHtml::submitButton('Login', array('class'=>'btn btn-primary')); ?>
+							<?php echo CHtml::submitButton('Masuk', array('class'=>'btn btn-primary','rel'=>'tooltip','title'=>'Klik untuk masuk ke sistem')); ?>
 					</div>   
 
 				    <?php if(Yii::app()->user->hasFlash('loginMessage')): ?>
