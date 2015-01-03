@@ -8,12 +8,13 @@ class PendudukModule extends CWebModule
 	{
 		// this method is called when the module is being created
 		// you may place code here to customize the module or the application
-
+		//$this->defaultController = 'Admin';
 		// import the module-level models and components
 		$this->setImport(array(
 			'penduduk.models.*',
 			'penduduk.components.*',
 		));
+		//$this->setComponent('penduduk', new CPenduduk); 
 	}
 	
 	public $pendudukAdminCreateUrl = array("/penduduk/admin/create");
@@ -31,16 +32,19 @@ class PendudukModule extends CWebModule
 		else
 			return false;
 	}
+    
     public function ambilUrlAsset()
     {
         if($this->_UrlAssets===null)
         $this->_UrlAssets=Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('penduduk.assets'),false,1,YII_DEBUG);
         return $this->_UrlAssets;
     }	
+    
     public function daftarkanCss($file, $media='all')
     {
         $href = $this->ambilUrlAsset().'/css/'.$file;
         return Yii::app()->clientScript->registerCssFile($href,$media);
         //return '<link rel="stylesheet" type="text/css" href="'.$href.'" media="'.$media.'" />';
     }
+
 }

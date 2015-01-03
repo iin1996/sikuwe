@@ -19,7 +19,33 @@ $form = $this->beginWidget('booster.widgets.TbActiveForm', array(
 <?php echo $form->textFieldGroup($model, 'nik', array('class'=>'span3')); ?>
 <?php echo $form->textFieldGroup($model, 'nama', array('class'=>'span3')); ?>
 <?php echo $form->textFieldGroup($model, 'tempat_lahir', array('class'=>'span3')); ?>
-<?php /* echo $form->datePickerGroup($model, 'tanggal_lahir', array('wrapperhtmlOptions'=>array('class'=>'col-sm-5'),'widgetOptions'=>array('options'=>array('format'=>'dd-mm-yyyy')),); */ ?>
+<div class="form-group">
+<label class="col-sm-3 control-label required" for="tanggal_lahir"><?php echo $model->getAttributeLabel('tanggal_lahir') ?> <span class="required">*</span></label>
+<div class="col-sm-9">
+<?php /* echo $form->datePickerGroup($model, 'tanggal_lahir', array('wrapperhtmlOptions'=>array('class'=>'col-sm-5'),'widgetOptions'=>array('options'=>array('format'=>'dd-mm-yyyy')),); */ 
+	$this->widget('zii.widgets.jui.CJuiDatePicker', array(
+	                                'model'=>$model,
+	                                'name'=>'Penduduk[tanggal_lahir]',
+	                                'attribute'=>'tanggal_lahir',
+	                                // additional javascript options for the date picker plugin
+	                                'options'=>array(
+	                                    'showAnim'=>'fold',
+	                                    'dateFormat'=>'yy-mm-dd',
+	                                    'changeMonth'=>true,
+	                                    'changeYear'=>true,
+	                                    'maxDate'=>'+0m +0w',
+	                                ),
+	                                'htmlOptions'=>array(
+	                                	'class'=>'form-control',
+	                                	'placeholder'=>'dd-mm-yyyy',
+	                                    //'style'=>'height:20px;',
+	                                    'size'=>10,
+	                                ),
+	                            ));
+
+?>
+</div>
+</div>
 <?php echo $form->textFieldGroup($model, 'kewarganegaraan', array('class'=>'span3')); ?>
 <?php echo $form->radioButtonListGroup($model, 'id_jenis_kelamin', array('widgetOptions'=>array('template'=>'{beginLabel}{input}{labelTitle}{endLabel}','data'=>array('Laki-Laki', 'Perempuan'))));?>
 <?php echo $form->dropDownListGroup($model, 'id_golongan_darah', array(

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 30, 2014 at 06:58 PM
+-- Generation Time: Jan 04, 2015 at 04:26 AM
 -- Server version: 5.5.37-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.5
 
@@ -52,28 +52,29 @@ CREATE TABLE IF NOT EXISTS `tbl_penduduk` (
   `kewarganegaraan` varchar(18) NOT NULL,
   `foto` varchar(150) DEFAULT NULL,
   `sidik_jari` varchar(45) DEFAULT NULL,
-  `id_jenis_kelamin` int(11) NOT NULL,
-  `id_golongan_darah` int(11) DEFAULT NULL,
-  `id_agama` int(11) NOT NULL,
-  `id_status_kawin` int(11) DEFAULT NULL,
-  `id_status_tinggal` int(11) DEFAULT NULL,
-  `id_pendidikan` int(11) DEFAULT NULL,
-  `id_pekerjaan` int(11) DEFAULT NULL,
-  `id_cacat` int(11) DEFAULT '-1',
-  `id_status_kependudukan` int(11) DEFAULT NULL,
-  `is_active` int(11) DEFAULT NULL,
-  `is_temporary` int(11) DEFAULT NULL,
-  `disimpan` int(11) DEFAULT '0',
-  `diperbarui` int(11) DEFAULT NULL,
+  `id_jenis_kelamin` varchar(11) NOT NULL,
+  `id_golongan_darah` varchar(11) DEFAULT NULL,
+  `id_agama` varchar(11) NOT NULL,
+  `id_status_kawin` varchar(11) DEFAULT NULL,
+  `id_status_tinggal` varchar(11) DEFAULT NULL,
+  `id_pendidikan` varchar(11) DEFAULT NULL,
+  `id_pekerjaan` varchar(11) DEFAULT NULL,
+  `id_cacat` varchar(11) DEFAULT '-1',
+  `id_status_kependudukan` varchar(11) DEFAULT NULL,
+  `is_active` tinyint(1) NOT NULL DEFAULT '1',
+  `is_temporary` varchar(11) DEFAULT NULL,
+  `disimpan` varchar(11) DEFAULT '0',
+  `diperbarui` varchar(11) DEFAULT NULL,
   PRIMARY KEY (`id_penduduk`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `tbl_penduduk`
 --
 
 INSERT INTO `tbl_penduduk` (`id_penduduk`, `nik`, `nama`, `tempat_lahir`, `tanggal_lahir`, `kewarganegaraan`, `foto`, `sidik_jari`, `id_jenis_kelamin`, `id_golongan_darah`, `id_agama`, `id_status_kawin`, `id_status_tinggal`, `id_pendidikan`, `id_pekerjaan`, `id_cacat`, `id_status_kependudukan`, `is_active`, `is_temporary`, `disimpan`, `diperbarui`) VALUES
-(1, '3301100503780005', 'Samsul Ma''arif', 'Cilacap', '1978-03-06', 'Indonsia', 'd', 'a', 1, 1, 1, 1, 1, 1, 1, -1, 1, 1, 1, 0, NULL);
+(1, '3301100503780005', 'Samsul Ma''arif', 'Cilacap', '1978-03-06', 'Indonsia', 'd', 'a', '1', '1', '1', '1', '1', '1', '1', '-1', '1', 1, '1', '0', NULL),
+(2, '3301154203590006', 'Rifngatul Mahmudah', 'Arab', '0000-00-00', 'Indonsia', NULL, NULL, '', NULL, '', NULL, NULL, NULL, NULL, '-1', NULL, 0, NULL, '0', NULL);
 
 -- --------------------------------------------------------
 
@@ -160,7 +161,7 @@ CREATE TABLE IF NOT EXISTS `tbl_users` (
 --
 
 INSERT INTO `tbl_users` (`id`, `username`, `password`, `email`, `activkey`, `create_at`, `lastvisit_at`, `superuser`, `status`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'webmaster@example.com', '9a24eff8c15a6a141ece27eb6947da0f', '2014-01-01 17:28:33', '2014-12-30 10:16:45', 1, 1),
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'webmaster@example.com', '9a24eff8c15a6a141ece27eb6947da0f', '2014-01-01 17:28:33', '2015-01-03 19:44:00', 1, 1),
 (2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', '2014-01-01 17:28:33', '2014-01-10 08:19:54', 0, 0),
 (3, 'samsul', 'cf6146b01e53a64bd330a52c630269b3', 'mail@samsul.web.d', 'bfffeda7eb12068b38e2546f0b2aa498', '2014-01-02 03:42:27', '2014-12-21 19:30:56', 1, 1);
 

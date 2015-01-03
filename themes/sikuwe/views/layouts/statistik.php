@@ -1,7 +1,7 @@
     <div class="box col-md-4">
         <div class="box-inner">
             <div class="box-header well" data-original-title="">
-                <h2><i class="glyphicon glyphicon-list"></i> Statistik mingguan</h2>
+                <h2><i class="glyphicon glyphicon-list"></i> Statistik</h2>
 
                 <div class="box-icon">
                     <a href="#" class="btn btn-setting btn-round btn-default"><i
@@ -17,8 +17,8 @@
                     <li>
                         <a href="#">
                             <i class="glyphicon glyphicon-arrow-down"></i>
-                            <span class="red">15</span>
-                            Pendaftaran baru
+                            <span class="red"><?php //echo Yii::app()->getModule('penduduk')->penduduk->jumlahPenduduk();?></span>
+                            Keluarga
                         </a>
                     </li>
                 </ul>

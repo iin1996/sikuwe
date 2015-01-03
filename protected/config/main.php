@@ -12,7 +12,7 @@ return array(
 	'theme'=>'sikuwe',
 
 	// preloading 'log' component
-	'preload'=>array('booster','bootstrap','log'),
+	'preload'=>array('booster','log'),
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -21,6 +21,10 @@ return array(
         'application.modules.user.models.*',
         'application.modules.user.components.*',
 	),
+
+    'aliases'=>array(
+    	'booster'=>'ext.booster',
+    	),
 
 	'modules'=>array(
 		'penduduk',
@@ -68,6 +72,9 @@ return array(
 			'password'=>'.',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
+			'generatorPaths'=>array(
+				'booster.gii',
+			),
 		),
 		
 	),

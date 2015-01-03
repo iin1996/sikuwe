@@ -1,6 +1,7 @@
 <?php
 /* @var $this AdminController */
 /* @var $dataProvider CActiveDataProvider */
+/* @var $model Penduduk */
 
 $this->breadcrumbs=array(
 	'Penduduk',
@@ -12,9 +13,16 @@ $this->menu=array(
 );
 ?>
 
-<h1>Penduduks</h1>
+<h1>Penduduk</h1>
 
-<?php $this->widget('zii.widgets.CListView', array(
+<?php /* $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
-)); ?>
+)); */
+
+$this->renderPartial('_view',array(
+	'dataProvider'=>$dataProvider,
+	//'model'=>$model,
+));
+
+?>

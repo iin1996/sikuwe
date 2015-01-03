@@ -54,8 +54,8 @@ class Penduduk extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nik, nama, tempat_lahir, tanggal_lahir, kewarganegaraan, foto, sidik_jari, id_jenis_kelamin, id_golongan_darah, id_agama, id_status_kawin, id_status_tinggal, id_pendidikan, id_pekerjaan, id_status_kependudukan, is_active, is_temporary', 'required'),
-			array('id_jenis_kelamin, id_golongan_darah, id_agama, id_status_kawin, id_status_tinggal, id_pendidikan, id_pekerjaan, id_cacat, id_status_kependudukan, is_active, is_temporary, disimpan, diperbarui', 'numerical', 'integerOnly'=>false),
+			array('nik, nama, tempat_lahir, tanggal_lahir', 'required'),
+			//array('id_jenis_kelamin, id_golongan_darah, id_agama, id_status_kawin, id_status_tinggal, id_pendidikan, id_pekerjaan, id_cacat, id_status_kependudukan, is_active, is_temporary, disimpan, diperbarui', 'numerical', 'integerOnly'=>false),
 			array('nik', 'length', 'max'=>16),
 			array('nama', 'length', 'max'=>75),
 			array('tempat_lahir, sidik_jari', 'length', 'max'=>45),
