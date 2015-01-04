@@ -84,7 +84,7 @@
                 </div>
             </div>
             <div class="box-content row">
-                <div class="col-lg-7 col-md-12">
+                <div class="col-md-12">
                     <?php echo $content; ?>
                 </div>
             </div>

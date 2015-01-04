@@ -10,3 +10,6 @@ table, tr, td {
 	margin: 5px 3px 3px 5px;
 }
 
+.form-control {
+	max-width: 30%;
+}

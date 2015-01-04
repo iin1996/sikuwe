@@ -40,7 +40,7 @@
                 <li>
                     <form class="navbar-search pull-left">
                         <input placeholder="Pencarian" class="search-query form-control col-md-10" name="query"
-                               type="text">
+                               type="text" style="min-width: 155px">
                     </form>
                 </li>
             </ul>

@@ -41,9 +41,12 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 </div><!-- search-form -->
 
 <?php //$this->widget('zii.widgets.grid.CGridView', array(
-	$this->widget('booster.widgets.TbGridView', array(
+	//$this->widget('booster.widgets.TbGridView', array(
+	$this->widget('booster.widgets.TbExtendedGridView', array(
+		'fixedHeader'=>true,
+		'headerOffset'=>40,	
 	'id'=>'penduduk-grid',
-	'type'=>'striped bordered condensed',
+	'type'=>'striped',
 	'dataProvider'=>$model->search(),
 	'template'=>"{items}",
 	'filter'=>$model,
@@ -73,7 +76,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		*/
 		array(
 			'class'=>'booster.widgets.TbButtonColumn',
-			'htmlOptions'=>array('style'=>'width: 50px'),
+			'htmlOptions'=>array('style'=>'width: 100px'),
 		),
 	),
 )); ?>

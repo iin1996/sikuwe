@@ -4,7 +4,7 @@
 /* @var $form CActiveForm */
 ?>
 <?php //Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl.'/assets/css/form.css');?>
-<?php //Yii::app()->controller->module->daftarkanCss('form.css');?>
+<?php Yii::app()->controller->module->daftarkanCss('form.css');?>
 
 <div class="form" style="padding-left: 10px;">
 <div class="row" style="padding-left: 15px;">

@@ -30,6 +30,7 @@ class TbExtendedGridView extends TbGridView {
 	 * @var bool $fixedHeader if set to true will keep the header fixed  position
 	 */
 	public $fixedHeader = false;
+	public $rowHtmlOptionsExpression;
 
 	/**
 	 * @var integer $headerOffset, when $fixedHeader is set to true, headerOffset will position table header top position
