@@ -13,17 +13,9 @@
 
     <!-- gaya tampilan-->
     <link id="bs-css" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/bootstrap-cerulean.min.css" rel="stylesheet">
-    <link id="bs-css" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/bootstrap.css" rel="stylesheet"> 
+    <!-- <link id="bs-css" href="<?php //echo Yii::app()->theme->baseUrl ?>/assets/css/bootstrap.css" rel="stylesheet"> -->
 
     <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/sikuwe-app.css" rel="stylesheet">
-    <!--
-    <link href='<?php //echo Yii::app()->theme->baseUrl ?>/assets/css/jquery.noty.css' rel='stylesheet'>
-    <link href='<?php //echo Yii::app()->theme->baseUrl ?>/assets/css/noty_theme_default.css' rel='stylesheet'>
-    <link href='<?php //echo Yii::app()->theme->baseUrl ?>/assets/css/elfinder.min.css' rel='stylesheet'>
-    <link href='<?php //echo Yii::app()->theme->baseUrl ?>/assets/css/elfinder.theme.css' rel='stylesheet'>
-    <link href='<?php //echo Yii::app()->theme->baseUrl ?>/assets/css/uploadify.css' rel='stylesheet'>
-    <link href='<?php //echo Yii::app()->theme->baseUrl ?>/assets/css/animate.min.css' rel='stylesheet'>
-    -->
 
     <!-- jQuery -->
     <script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.min.js"></script>
@@ -63,6 +55,7 @@
 
             <?php $this->widget('zii.widgets.CBreadcrumbs', array(
                 'links'=>$this->breadcrumbs,
+
             )); ?>
 
     </div>
@@ -72,7 +65,7 @@
     <div class="box col-md-12">
         <div class="box-inner">
             <div class="box-header well">
-                <h2><i class="glyphicon glyphicon-info-sign"></i> Pengenalan</h2>
+                <h2><i class="glyphicon glyphicon-info-sign"></i> <?php echo $this->pageTitle;?></h2>
 
                 <div class="box-icon">
                     <a href="#" class="btn btn-setting btn-round btn-default"><i
@@ -124,30 +117,6 @@
 <!-- javascript eksternal-->
 
 <script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/bootstrap.min.js"></script>
-
-<!-- librari untuk manajemen cookie 
-<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.cookie.js"></script> -->
-<!-- plugin tabel data 
-<script src='<?php //echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.dataTables.min.js'></script> -->
-<!-- select or dropdown enhancer 
-<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/bower_components/chosen/chosen.jquery.min.js"></script> -->
-<!-- plugin untuk melihat galeri gambar
-<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/bower_components/colorbox/jquery.colorbox-min.js"></script> -->
-<!-- plugin pemberitahuan 
-<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.noty.js"></script> -->
-<!-- librari untuk membuat tabel responsif 
-<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/bower_components/responsive-tables/responsive-tables.js"></script> -->
-<!-- plugin berkeliling
-<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script> -->
-<!-- plugin untuk autogrowing textarea 
-<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.autogrow-textarea.js"></script> -->
-<!-- plugin untuk mengunggah banyak berkas 
-<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.uploadify-3.1.min.js"></script> -->
-<!-- history.js for cross-browser state change on ajax 
-<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.history.js"></script> -->
-<!-- skrip aplikasi untuk versi demo SIKUWE
-<script src="<?php //echo Yii::app()->theme->baseUrl ?>/assets/js/sikuwe.js"></script>-->
-
 
 </body>
 </html>

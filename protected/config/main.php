@@ -142,7 +142,7 @@ return array(
 				array(
 					'class'=>'CWebLogRoute',
 					'enabled'=> YII_DEBUG,
-					'levels'=>'trace, error, warning, notice',
+					'levels'=>'notice, warning, trace, error',
 					'categories'=>'application',
 					'showInFireBug'=>false,
 				),

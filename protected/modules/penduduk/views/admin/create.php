@@ -4,7 +4,7 @@
 
 $this->breadcrumbs=array(
 	'Penduduk'=>array('index'),
-	'Create',
+	'Entri Data',
 );
 
 //$this->menu=array(
@@ -13,6 +13,6 @@ $this->breadcrumbs=array(
 //);
 ?>
 
-<h1>Create Penduduk</h1>
+<h1>Entri Data Penduduk</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

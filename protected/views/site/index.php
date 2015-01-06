@@ -1,20 +1,21 @@
 <?php
 /* @var $this SiteController */
-
+$this->breadcrumbs=array(
+	''=>'',
+);
 $this->pageTitle=Yii::app()->name;
 ?>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+<h1>Selamat datang di <i><?php echo CHtml::encode(Yii::app()->name); ?></i><br>
+    <small>SIKUWE adalah Sistem Informasi Kependudukan berbasis Website.</small>
+</h1>
+<p>Ini adalah halaman utama dari SIKUWE. SIKUWE dibuat untuk memudahkan kegiatan administrasi pada pedesaan dalam kependudukan</p>
 
-<p>Congratulations! You have successfully created your Yii application.</p>
+<p><b>Silakan digunakan untuk tujuan baik.</b></p>
 
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
-
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+<p class="center-block download-buttons">
+    <a href="<?php echo $this->createUrl('/penduduk/admin/create'); ?>" class="btn btn-primary btn-lg"><i
+            class="glyphicon glyphicon-edit"></i> Memulai entri</a>
+    <a href="<?php echo $this->createUrl('/penduduk/admin/index'); ?>" class="btn btn-default btn-lg"><i
+            class="glyphicon glyphicon-user"></i> Lihat data penduduk</a>
+</p>

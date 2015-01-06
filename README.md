@@ -18,6 +18,6 @@ Dibuat sekedar untuk memenuhi tugas kuliah :-)
 ## Import
 
     cd /lokasi/folder/sikuwe
-    mysql -uroot -ppassword sikuwe < protected/data/sikuwe-mysql.sql
+    mysql -u root -ppassword sikuwe < protected/data/sikuwe-mysql.sql
 
 Selamat mencoba, kalo error, gak tanggung jawab... :-P
