@@ -1,23 +1,39 @@
-SIKUWE
+SIKUWE - Sistem Informasi Kependudukan Berbasis Website
 ======
 
-Dibuat sekedar untuk memenuhi tugas kuliah :-)
-
-> CATATAN: Aplikasi ini tidak dibuat eksklusif, tidak akan diupdate secara berkelanjutan. Hanya sebagai media belajar :))
+> CATATAN: Aplikasi ini menggunakan bahasa PHP berbasis Framework YII. Silakan gunakan dengan bijak.
 
 ## Kebutuhan
 
-  - Apache 2.x atau nGinx dengan php 5.x
-  - Mysql atau mariaDb
-  - wis kuwe tok, mulane si-kuwe
+  - Webserver: Apache 2.x atau nGinx dengan php 5.x
+  - Database : MySQL atau mariaDb
 
-## Download
+## Unduh
 
-    git clone git@bitbucket.org:samsulmaarif_/sikuwe.git
+    git clone https://github.com/puskomedia/sikuwe.git
 
-## Import
+## Impor basis data
 
     cd /lokasi/folder/sikuwe
     mysql -u root -ppassword sikuwe < protected/data/sikuwe-mysql.sql
 
-Selamat mencoba, kalo error, gak tanggung jawab... :-P
+## Pengaturan basis data
+
+buat file protected/config/database.php
+
+    <?php
+    return array(
+        'connectionString' => 'mysql:host=localhost;dbname=sikuwe',
+        'emulatePrepare' => true,
+        'username' => 'root',
+        'password' => 'root',
+        'charset' => 'utf8',
+        'tablePrefix' => 'tbl_',
+    );
+
+## Konfigurasi
+
+buat folder berikut
+
+    sikuwe/assets
+    sikuwe/protected/runtime
