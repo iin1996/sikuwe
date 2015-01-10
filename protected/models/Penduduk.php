@@ -56,11 +56,13 @@ class Penduduk extends CActiveRecord
 		return array(
 			array('nik, nama, tempat_lahir, tanggal_lahir', 'required'),
 			//array('id_jenis_kelamin, id_golongan_darah, id_agama, id_status_kawin, id_status_tinggal, id_pendidikan, id_pekerjaan, id_cacat, id_status_kependudukan, is_active, is_temporary, disimpan, diperbarui', 'numerical', 'integerOnly'=>false),
-			array('nik', 'length', 'max'=>16),
+			array('is_active', 'numerical', 'integerOnly'=>true),
+			array('nik', 'length', 'max'=>50),
 			array('nama', 'length', 'max'=>75),
 			array('tempat_lahir, sidik_jari', 'length', 'max'=>45),
 			array('kewarganegaraan', 'length', 'max'=>18),
 			array('foto', 'length', 'max'=>150),
+			array('id_jenis_kelamin, id_golongan_darah, id_agama, id_status_kawin, id_status_tinggal, id_pendidikan, id_pekerjaan, id_cacat, id_status_kependudukan', 'length', 'max'=>50),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id_penduduk, nik, nama, tempat_lahir, tanggal_lahir, id_jenis_kelamin, id_golongan_darah, id_agama, id_status_kawin', 'safe', 'on'=>'search'),
@@ -125,21 +127,21 @@ class Penduduk extends CActiveRecord
 		$criteria->compare('tempat_lahir',$this->tempat_lahir,true);
 		$criteria->compare('tanggal_lahir',$this->tanggal_lahir,true);
 		$criteria->compare('kewarganegaraan',$this->kewarganegaraan,true);
-		$criteria->compare('foto',$this->foto,true);
-		$criteria->compare('sidik_jari',$this->sidik_jari,true);
-		$criteria->compare('id_jenis_kelamin',$this->id_jenis_kelamin);
-		$criteria->compare('id_golongan_darah',$this->id_golongan_darah);
-		$criteria->compare('id_agama',$this->id_agama);
-		$criteria->compare('id_status_kawin',$this->id_status_kawin);
-		$criteria->compare('id_status_tinggal',$this->id_status_tinggal);
-		$criteria->compare('id_pendidikan',$this->id_pendidikan);
-		$criteria->compare('id_pekerjaan',$this->id_pekerjaan);
-		$criteria->compare('id_cacat',$this->id_cacat);
-		$criteria->compare('id_status_kependudukan',$this->id_status_kependudukan);
-		$criteria->compare('is_active',$this->is_active);
-		$criteria->compare('is_temporary',$this->is_temporary);
-		$criteria->compare('disimpan',$this->disimpan);
-		$criteria->compare('diperbarui',$this->diperbarui);
+		//$criteria->compare('foto',$this->foto,true);
+		//$criteria->compare('sidik_jari',$this->sidik_jari,true);
+		//$criteria->compare('id_jenis_kelamin',$this->id_jenis_kelamin);
+		//$criteria->compare('id_golongan_darah',$this->id_golongan_darah);
+		//$criteria->compare('id_agama',$this->id_agama);
+		//$criteria->compare('id_status_kawin',$this->id_status_kawin);
+		//$criteria->compare('id_status_tinggal',$this->id_status_tinggal);
+		//$criteria->compare('id_pendidikan',$this->id_pendidikan);
+		//$criteria->compare('id_pekerjaan',$this->id_pekerjaan);
+		//$criteria->compare('id_cacat',$this->id_cacat);
+		//$criteria->compare('id_status_kependudukan',$this->id_status_kependudukan);
+		//$criteria->compare('is_active',$this->is_active);
+		//$criteria->compare('is_temporary',$this->is_temporary);
+		//$criteria->compare('disimpan',$this->disimpan);
+		//$criteria->compare('diperbarui',$this->diperbarui);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

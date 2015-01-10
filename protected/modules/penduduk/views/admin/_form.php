@@ -34,6 +34,7 @@ $form = $this->beginWidget('booster.widgets.TbActiveForm', array(
 	                                    'changeMonth'=>true,
 	                                    'changeYear'=>true,
 	                                    'maxDate'=>'+0m +0w',
+	                                    'yearRange'=>"1900:2112"
 	                                ),
 	                                'htmlOptions'=>array(
 	                                	'class'=>'form-control',
@@ -47,17 +48,17 @@ $form = $this->beginWidget('booster.widgets.TbActiveForm', array(
 </div>
 </div>
 <?php echo $form->textFieldGroup($model, 'kewarganegaraan', array('class'=>'span3')); ?>
-<?php echo $form->radioButtonListGroup($model, 'id_jenis_kelamin', array('widgetOptions'=>array('template'=>'{beginLabel}{input}{labelTitle}{endLabel}','data'=>array('Laki-Laki', 'Perempuan'))));?>
+<?php echo $form->radioButtonListGroup($model, 'id_jenis_kelamin', array('widgetOptions'=>array('template'=>'{beginLabel}{input}{labelTitle}{endLabel}','data'=>array('Laki-Laki'=>'Laki-Laki', 'Perempuan'=>'Perempuan'))));?>
 <?php echo $form->dropDownListGroup($model, 'id_golongan_darah', array(
 									'widgetOptions'=>array(
-										'data'=>array('A','B','O','AB','A+','A-','AB+','AB-','B+','B-','O+','O-','Tidak Tahu')),'class'=>'span3'
+										'data'=>array('A'=>'A','B'=>'B','O'=>'O','AB'=>'AB','A+'=>'A+','A-'=>'A-','AB+'=>'AB+','AB-'=>'AB-','B+'=>'B+','B-'=>'B-','O+'=>'O+','O-'=>'O-','Tidak Tahu'=>'Tidak Tahu')),'class'=>'span3'
 									)); ?>
-<?php echo $form->dropDownListGroup($model, 'id_agama', array('widgetOptions'=>array('data'=>array('Islam','Kristen','Katholik','Hindu','Budha','Konghucu','Aliran Kepercayaan','Aliran lainnya')),'class'=>'span3')); ?>
-<?php echo $form->dropDownListGroup($model, 'id_status_kawin', array('widgetOptions'=>array('data'=>array('Belum Kawin','Kawin','Cerai Hidup','Cerai Mati')),'class'=>'span3')); ?>
-<?php echo $form->dropDownListGroup($model, 'id_status_tinggal', array('widgetOptions'=>array('data'=>array('Tinggal Tetap','Tinggal di Luar Kota','Tinggal di Luar Provinsi','Tinggal di Luar Negeri')),'class'=>'span3')); ?>
+<?php echo $form->dropDownListGroup($model, 'id_agama', array('widgetOptions'=>array('data'=>array('Islam'=>'Islam','Kristen'=>'Kristen','Katholik'=>'Katholik','Hindu'=>'Hindu','Budha'=>'Budha','Konghucu'=>'Konghucu','Aliran Kepercayaan'=>'Aliran Kepercayaan','Aliran lainnya'=>'Aliran lainnya')),'class'=>'span3')); ?>
+<?php echo $form->dropDownListGroup($model, 'id_status_kawin', array('widgetOptions'=>array('data'=>array('Belum Kawin'=>'Belum Kawin','Kawin'=>'Kawin','Cerai Hidup'=>'Cerai Hidup','Cerai Mati'=>'Cerai Mati')),'class'=>'span3')); ?>
+<?php echo $form->dropDownListGroup($model, 'id_status_tinggal', array('widgetOptions'=>array('data'=>array('Tinggal Tetap'=>'Tinggal Tetap','Tinggal di Luar Kota'=>'Tinggal di Luar Kota','Tinggal di Luar Provinsi'=>'Tinggal di Luar Provinsi','Tinggal di Luar Negeri'=>'Tinggal di Luar Negeri')),'class'=>'span3')); ?>
 <?php echo $form->textFieldGroup($model, 'id_pekerjaan', array('hint'=>'Tuliskan pekerjaan di sini','class'=>'span3')); ?>
-<?php echo $form->dropDownListGroup($model, 'id_cacat', array('widgetOptions'=>array('data'=>array('Tidak Cacat','Cacat Fisik','Cacat Netra/Buta','Cacat Rungu/Wicara','Cacat Mental/Jiwa','Cacat Fisik dan Mental','Cacat Lainnya')),'class'=>'span3')); ?>
-<?php echo $form->dropDownListGroup($model, 'id_status_kependudukan', array('widgetOptions'=>array('data'=>array('Penduduk Asli/Tetap','Pendatang','Pindah','Meninggal')),'class'=>'span3')); ?>
+<?php echo $form->dropDownListGroup($model, 'id_cacat', array('widgetOptions'=>array('data'=>array('Tidak Cacat'=>'Tidak Cacat','Cacat Fisik'=>'Cacat Fisik','Cacat Netra/Buta'=>'Cacat Netra/Buta','Cacat Rungu/Wicara'=>'Cacat Rungu/Wicara','Cacat Mental/Jiwa'=>'Cacat Mental/Jiwa','Cacat Fisik dan Mental'=>'Cacat Fisik dan Mental','Cacat Lainnya'=>'Cacat Lainnya')),'class'=>'span3')); ?>
+<?php echo $form->dropDownListGroup($model, 'id_status_kependudukan', array('widgetOptions'=>array('data'=>array('Penduduk Asli/Tetap'=>'Penduduk Asli/Tetap','Pendatang'=>'Pendatang','Pindah'=>'Pindah','Meninggal'=>'Meninggal')),'class'=>'span3')); ?>
 <?php //echo $form->textFieldGroup($model, 'is_active', array('class'=>'span3')); ?>
 <?php //echo $form->textFieldGroup($model, 'is_temporary', array('class'=>'span3')); ?>
 <div class="form-actions">
