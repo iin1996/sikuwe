@@ -116,7 +116,9 @@ return array(
 		),
 		*/
 		// uncomment the following to use a MySQL database
-		
+
+        'db' => require(dirname(__FILE__) . '/database.php'),
+		/*
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=sikuwe',
 			'emulatePrepare' => true,
@@ -125,6 +127,8 @@ return array(
 			'charset' => 'utf8',
 			'tablePrefix' => 'tbl_',
 		),
+		*/
+
 		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
