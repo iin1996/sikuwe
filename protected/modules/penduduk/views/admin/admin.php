@@ -77,6 +77,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		array(
 			'header'=>'Aksi',
 			'class'=>'booster.widgets.TbButtonColumn',
+			'deleteConfirmation'=>'Anda yakin mau menghapus data penduduk ini?',
+			'deleteButtonUrl'=>Yii::app()->createUrl("penduduk/admin/delete/id/".$model->id_penduduk),
 			'htmlOptions'=>array('style'=>'width: 100px'),
 		),
 	),

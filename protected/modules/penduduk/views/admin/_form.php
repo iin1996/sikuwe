@@ -48,7 +48,7 @@ $form = $this->beginWidget('booster.widgets.TbActiveForm', array(
 </div>
 </div>
 <?php echo $form->textFieldGroup($model, 'kewarganegaraan', array('class'=>'span3')); ?>
-<?php echo $form->radioButtonListGroup($model, 'id_jenis_kelamin', array('widgetOptions'=>array('template'=>'{beginLabel}{input}{labelTitle}{endLabel}','data'=>array('Laki-Laki'=>'Laki-Laki', 'Perempuan'=>'Perempuan'))));?>
+<?php echo $form->dropDownListGroup($model, 'id_jenis_kelamin', array('widgetOptions'=>array('template'=>'{beginLabel}{input}{labelTitle}{endLabel}','data'=>array('Laki-Laki'=>'Laki-Laki', 'Perempuan'=>'Perempuan'))));?>
 <?php echo $form->dropDownListGroup($model, 'id_golongan_darah', array(
 									'widgetOptions'=>array(
 										'data'=>array('A'=>'A','B'=>'B','O'=>'O','AB'=>'AB','A+'=>'A+','A-'=>'A-','AB+'=>'AB+','AB-'=>'AB-','B+'=>'B+','B-'=>'B-','O+'=>'O+','O-'=>'O-','Tidak Tahu'=>'Tidak Tahu')),'class'=>'span3'

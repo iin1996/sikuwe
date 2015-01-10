@@ -144,7 +144,7 @@ return array(
 					'enabled'=> YII_DEBUG,
 					'levels'=>'notice, warning, trace, error',
 					'categories'=>'application',
-					'showInFireBug'=>false,
+					'showInFireBug'=>true,
 				),
 
 			),

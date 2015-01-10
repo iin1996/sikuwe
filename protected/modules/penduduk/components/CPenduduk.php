@@ -17,7 +17,7 @@ class CPenduduk extends CApplicationComponent
 
 		return $jumlah_penduduk;
 	}
-
+	/*
 	public function jumlahPendudukLakiLaki()
 	{
 		$criteria = new CDbCriteria;
@@ -37,5 +37,5 @@ class CPenduduk extends CApplicationComponent
 
 		return $jumlah_penduduk;
 	}
-	
+	*/
 ?>

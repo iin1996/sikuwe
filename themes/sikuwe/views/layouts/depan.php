@@ -61,6 +61,9 @@
     </div>
 </div>
 
+<?php
+$this->renderPartial('//layouts/jumlahPenduduk');
+?>
 
 <div class="row">
     <div class="box col-md-12">

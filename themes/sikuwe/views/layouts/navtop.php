@@ -6,7 +6,7 @@
                 <span>SIKUWE</span></a>
 
             <!-- awal user dropdown -->
-            <div class="btn-group pull-right">
+            <div class="btn-group pull-right" style="margin-right:3%;">
                 <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                     <i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs"> <?php echo Yii::app()->user->name; ?></span>
                     <span class="caret"></span>
@@ -14,7 +14,7 @@
 
                     <?php
                     $this->widget('booster.widgets.TbMenu', array(
-                        //'type'=>'pills',
+                        'type'=>'navbar',
                         'htmlOptions'=>array('class'=>'dropdown-menu'),
                         'items'=>array(
                             // Important: you need to specify url as 'controller/action',
@@ -36,7 +36,7 @@
 
 
             <ul class="collapse navbar-collapse nav navbar-nav top-menu">
-                <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Kunjungi situs pembuat</a></li>
+                <li><a href="http://puskomedia.com"><i class="glyphicon glyphicon-globe"></i> Kunjungi situs pembuat</a></li>
                 <li>
                     <form class="navbar-search pull-left">
                         <input placeholder="Pencarian" class="search-query form-control col-md-10" name="query"

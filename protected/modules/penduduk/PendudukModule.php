@@ -47,4 +47,14 @@ class PendudukModule extends CWebModule
         //return '<link rel="stylesheet" type="text/css" href="'.$href.'" media="'.$media.'" />';
     }
 
+	public function jumlahPenduduk()
+	{
+		$criteria = new CDbCriteria;
+		//$criteria->condition = 'is_active=:is_active';
+		$criteria->params = array(':is_active'=>'TRUE');
+		$jumlah_penduduk = Penduduk::model()->count($criteria);
+
+		return $jumlah_penduduk;
+	}
+
 }
