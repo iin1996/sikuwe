@@ -11,14 +11,12 @@
                 </div>
             </div>
             <div class="box-content">
-                <h3>SIKUWE memakai lisensi sumber terbuka</h3>
+                <h3 style="text-align:center;padding-bottom:20px;">SIKUWE memakai lisensi sumber terbuka</h3>
                 <a class="btn btn-default center-block col-md-6" title="GitHub"
-                   href="https://github.com" target="_blank"><i class="icon-edit"></i> Lihat di Github</a>
+                   href="https://github.com/puskomedia/sikuwe" target="_blank"><i class="glyphicon glyphicon-eye-open"></i> Lihat di GitHub</a>
 
                 <br/>
 
-                <p>Terimakasih telah membantu pengembangan SIKUWE <a href="http://github.com/"
-                                                                                  target="_blank">GitHub</a>.</p>
 
             </div>
         </div>
