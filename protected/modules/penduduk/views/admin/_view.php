@@ -17,7 +17,10 @@
 		//'filter'=>$model,
 		'columns'=>array(
 			//'id_penduduk',
-			'nik',
+			array(
+				'name'=>'nik',
+				'type'=>'raw',
+				'value'=>'CHtml::link($data->nik,Yii::app()->createUrl("penduduk/admin/view/id/".$data->id_penduduk),array("title"=>"Detail Penduduk"))',),
 			'nama',
 			'tempat_lahir',
 			'tanggal_lahir',

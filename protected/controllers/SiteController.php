@@ -77,9 +77,13 @@ class SiteController extends Controller
 
 	/**
 	 * Displays the login page
-	 
+	*/ 
 	public function actionLogin()
 	{
+		if(Yii::app()->user->isGuest) {
+			$this->redirect(array('/user/login'));
+		}
+		/*
 		$model=new LoginForm;
 
 		// if it is ajax validation request
@@ -100,8 +104,9 @@ class SiteController extends Controller
 		// display the login form
 		$this->render('login',array('model'=>$model));
 		//$this->render('user/login',array('model'=>$model));
+		*/ 
 	}
-	*/
+	
 	
 	/**
 	 * Logs out the current user and redirect to homepage.

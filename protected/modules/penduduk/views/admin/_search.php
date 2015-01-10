@@ -11,7 +11,7 @@
 		//'type'=>'search',
 	'action'=>Yii::app()->createUrl($this->route),
 	'method'=>'get',
-	'htmlOptions'=>array('class'=>''),
+	'htmlOptions'=>array('style'=>'max-width:30%;'),
 )); ?>
 
 <?php echo $form->textFieldGroup($model, 'nama', array('class'=>'input-medium', 'prepend'=>'<i class="icon-search"></i>','style'=>'max-width:150px;')); ?>
