@@ -110,8 +110,5 @@ $this->breadcrumbs=array(
 		<?php endif; ?>
 	</div>
 	
-	<div class="span3">
-		<?php $this->renderPartial('/user/right_side_user'); ?>
-	</div>	
 
 </div>

@@ -8,6 +8,10 @@ class DefaultController extends Controller
 	 */
 	public function actionIndex()
 	{
+		if(Yii::app()->user->isGuest) {
+			$this->redirect(array('/user/login'));
+		}
+		
 		$dataProvider=new CActiveDataProvider('User', array(
 			'criteria'=>array(
 		        'condition'=>'status>'.User::STATUS_BANNED,
