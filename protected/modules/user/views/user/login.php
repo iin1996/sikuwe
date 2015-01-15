@@ -44,10 +44,9 @@ $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Login");
                         <label class="remember" for="remember">
                     	<?php echo $form->checkbox($model,'rememberMe', array('id' => 'checks'));?> Ingat saya</label>  
                     </div>
-                    <div class="clearfix"></div>				    
+                    <!-- <div class="clearfix"></div> -->
 				    
-				    <div><?php echo CHtml::link(UserModule::t("Lupa kata sandi?"),Yii::app()->getModule('user')->recoveryUrl); ?></div>
-				    <br>
+				    
 					<div>
 							<?php echo CHtml::submitButton('Masuk', array('class'=>'btn btn-primary','rel'=>'tooltip','title'=>'Klik untuk masuk ke sistem')); ?>
 					</div>   
@@ -62,6 +61,8 @@ $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Login");
                 </fieldset>
 
 				<?php $this->endWidget(); unset($form);?>    
+
+<div style="padding-top:13px;"><?php echo CHtml::link(UserModule::t("Lupa kata sandi?"),Yii::app()->getModule('user')->recoveryUrl, array('rel'=>'tooltip','title'=>'Klik di sini jika Anda lupa kata sandi Anda!')); ?> | <?php echo CHtml::link(UserModule::t("Mendaftar"),Yii::app()->getModule('user')->registrationUrl, array('rel'=>'tooltip','title'=>'Klik di sini untuk mendaftar')); ?></div>
 
         </div>
         <!--/span-->

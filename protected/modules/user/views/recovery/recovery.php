@@ -6,8 +6,9 @@ $this->breadcrumbs=array(
 ?>
 <div class="ch-container">
     <div class="row center">
-
+<div class="login-header">
 <h1><?php echo UserModule::t("Kembalikan kata Sandi"); ?></h1>
+</div>
 
 <?php if(Yii::app()->user->hasFlash('recoveryMessage')): ?>
 <div class="success">
