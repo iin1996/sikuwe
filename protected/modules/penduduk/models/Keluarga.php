@@ -96,6 +96,8 @@ class Keluarga extends CActiveRecord
 		$criteria->compare('disimpan',$this->disimpan,true);
 
 		return new CActiveDataProvider($this, array(
+			'pagination'=>array(
+				'pageSize'=>5),
 			'criteria'=>$criteria,
 		));
 	}

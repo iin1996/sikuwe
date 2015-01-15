@@ -78,8 +78,11 @@
                 </div>
             </div>
             <div class="box-content row">
-                <div class="col-md-12">
+                <div class="col-md-9">
                     <?php echo $content; ?>
+                </div>
+                <div class="col-md-3 pull-right">
+                    <?php $this->renderPartial('//layouts/sisi_kanan'); ?>
                 </div>
             </div>
         </div>

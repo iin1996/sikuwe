@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Penduduk', 'url'=>array('index')),
-	array('label'=>'Create Penduduk', 'url'=>array('create')),
+	array('label'=>'Daftar Penduduk', 'url'=>array('index'), 'icon'=>'th-list'),
+	array('label'=>'Entri Penduduk', 'url'=>array('create'), 'icon'=>'pencil'),
 );
 
 Yii::app()->clientScript->registerScript('search', "

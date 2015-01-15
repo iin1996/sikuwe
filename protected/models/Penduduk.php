@@ -144,6 +144,8 @@ class Penduduk extends CActiveRecord
 		//$criteria->compare('diperbarui',$this->diperbarui);
 
 		return new CActiveDataProvider($this, array(
+			'pagination'=>array(
+				'pageSize'=>5),
 			'criteria'=>$criteria,
 		));
 	}

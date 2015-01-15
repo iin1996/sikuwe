@@ -7,10 +7,10 @@ $this->breadcrumbs=array(
 	'Entri Data',
 );
 
-//$this->menu=array(
-//	array('label'=>'List Penduduk', 'url'=>array('index')),
-//	array('label'=>'Manage Penduduk', 'url'=>array('admin')),
-//);
+$this->menu=array(
+	array('label'=>'Daftar Penduduk', 'url'=>array('index'), 'icon'=>'th-list'),
+	array('label'=>'Kelola Penduduk', 'url'=>array('admin'), 'icon'=>'cog'),
+);
 ?>
 
 <h1>Entri Data Penduduk</h1>

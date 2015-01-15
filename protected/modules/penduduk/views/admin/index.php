@@ -4,12 +4,12 @@
 /* @var $model Penduduk */
 
 $this->breadcrumbs=array(
-	'Penduduk',
+	'Data Penduduk',
 );
 
 $this->menu=array(
-	array('label'=>'Create Penduduk', 'url'=>array('create')),
-	array('label'=>'Manage Penduduk', 'url'=>array('admin')),
+	array('label'=>'Entri Penduduk', 'url'=>array('create'),'icon'=>'pencil'),
+	array('label'=>'Kelola Penduduk', 'url'=>array('admin'), 'icon'=>'cog'),
 );
 ?>
 

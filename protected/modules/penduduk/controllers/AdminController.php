@@ -89,7 +89,7 @@ class AdminController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model);
 
 		if(isset($_POST['Penduduk']))
 		{
@@ -110,11 +110,24 @@ class AdminController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
 
-		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		if(Yii::app()->request->isPostRequest)
+		{
+			// we only allow deletion via POST request
+			$penduduk = $this->loadModel($id);
+                        //$relations = $penduduk->getRelated();
+                        //print_r($relations);
+//                        foreach($relations AS $relation){
+//                            $relation->delete();
+//                        }
+            $penduduk->delete();
+			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+			if(!isset($_GET['ajax']))
+				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		}
+		else
+			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
+
 	}
 
 	/**
@@ -125,6 +138,7 @@ class AdminController extends Controller
 		$dataProvider=new CActiveDataProvider('Penduduk');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
+
 		));
 	}
 

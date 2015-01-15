@@ -8,27 +8,27 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Penduduk', 'url'=>array('index')),
-	array('label'=>'Create Penduduk', 'url'=>array('create')),
-	array('label'=>'Update Penduduk', 'url'=>array('update', 'id'=>$model->id_penduduk)),
-	array('label'=>'Delete Penduduk', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_penduduk),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Penduduk', 'url'=>array('admin')),
+	array('label'=>'Daftar Penduduk', 'url'=>array('index'), 'icon'=>'th-list'),
+	array('label'=>'Entri Penduduk', 'url'=>array('create'), 'icon'=>'pencil'),
+	array('label'=>'Perbarui Data', 'url'=>array('update', 'id'=>$model->id_penduduk), 'icon'=>'edit'),
+	array('label'=>'Hapus Penduduk', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_penduduk),'confirm'=>'Are you sure you want to delete this item?'), 'icon'=>'minus'),
+	array('label'=>'Kelola Penduduk', 'url'=>array('admin'), 'icon'=>'cog'),
 );
 ?>
 
-<h1>View Penduduk #<?php echo $model->id_penduduk; ?></h1>
+<h1>Detail Penduduk <strong><?php echo $model->nama; ?></strong></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'id_penduduk',
+		//'id_penduduk',
 		'nik',
 		'nama',
 		'tempat_lahir',
 		'tanggal_lahir',
 		'kewarganegaraan',
-		'foto',
-		'sidik_jari',
+		//'foto',
+		//'sidik_jari',
 		'id_jenis_kelamin',
 		'id_golongan_darah',
 		'id_agama',
@@ -38,9 +38,9 @@ $this->menu=array(
 		'id_pekerjaan',
 		'id_cacat',
 		'id_status_kependudukan',
-		'is_active',
-		'is_temporary',
-		'disimpan',
-		'diperbarui',
+		//'is_active',
+		//'is_temporary',
+		//'disimpan',
+		//'diperbarui',
 	),
 )); ?>
