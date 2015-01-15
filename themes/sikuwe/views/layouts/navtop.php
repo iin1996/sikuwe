@@ -9,10 +9,10 @@
         <div class="btn-group pull-right" style="margin-right:3%;">
             <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                 <i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs"> <?php echo Yii::app()->user->name; ?></span>
-                <span class="caret"></span>
+                <!-- <span class="caret"></span> -->
             </button>
 
-                <?php
+                <?php /*
                 $this->widget('booster.widgets.TbMenu', array(
                     'type'=>'navbar',
                     'htmlOptions'=>array('class'=>'dropdown-menu'),
@@ -28,7 +28,7 @@
                         array('label'=>'Logout', 'url'=>Yii::app()->getModule('user')->logoutUrl, 'visible'=>!Yii::app()->user->isGuest),
                         array('label'=>'Login', 'url'=>Yii::app()->getModule('user')->loginUrl, 'visible'=>Yii::app()->user->isGuest),
                     ),
-                ));
+                )); */
                 ?>
 
         </div>
