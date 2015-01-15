@@ -8,6 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
+	array('label'=>'ADMINISTRATIF'),
 	array('label'=>'Daftar Penduduk', 'url'=>array('index'), 'icon'=>'th-list'),
 	array('label'=>'Kelola Penduduk', 'url'=>array('admin'), 'icon'=>'cog'),
 );

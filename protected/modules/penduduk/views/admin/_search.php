@@ -14,7 +14,7 @@
 	'htmlOptions'=>array('style'=>'max-width:30%;'),
 )); ?>
 
-<?php echo $form->textFieldGroup($model, 'nama', array('class'=>'input-medium', 'prepend'=>'<i class="icon-search"></i>','style'=>'max-width:150px;')); ?>
+<?php echo $form->textFieldGroup($model, 'nama', array('class'=>'input-medium', 'prepend'=>'<i class="glyphicon glyphicon-search"></i>','style'=>'max-width:150px;')); ?>
 <?php $this->widget('booster.widgets.TbButton', array('buttonType'=>'submit', 'label'=>'Cari')); ?>
 <!--
 <table>

@@ -8,12 +8,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
+	array('label'=>'ADMINISTRATIF'),
 	array('label'=>'Entri Penduduk', 'url'=>array('create'),'icon'=>'pencil'),
 	array('label'=>'Kelola Penduduk', 'url'=>array('admin'), 'icon'=>'cog'),
 );
 ?>
 
-<h1>Penduduk</h1>
+<h1>Data Penduduk</h1>
 
 <?php /* $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

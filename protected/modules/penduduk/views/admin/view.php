@@ -8,6 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
+	array('label'=>'ADMINISTRATIF'),
 	array('label'=>'Daftar Penduduk', 'url'=>array('index'), 'icon'=>'th-list'),
 	array('label'=>'Entri Penduduk', 'url'=>array('create'), 'icon'=>'pencil'),
 	array('label'=>'Perbarui Data', 'url'=>array('update', 'id'=>$model->id_penduduk), 'icon'=>'edit'),
@@ -16,7 +17,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Detail Penduduk <strong><?php echo $model->nama; ?></strong></h1>
+<h1><small>Detail Penduduk</small> <strong><?php echo $model->nama; ?></strong></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
