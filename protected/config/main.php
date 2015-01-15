@@ -83,7 +83,7 @@ return array(
 	'components'=>array(
 		'user'=>array(
 			// enable cookie-based authentication
-			'allowAutoLogin'=>false,
+			'allowAutoLogin'=>true,
 		),
 		/*
 		'bootstrap'=>array(
