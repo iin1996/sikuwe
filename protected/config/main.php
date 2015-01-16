@@ -142,14 +142,14 @@ return array(
 					'levels'=>'trace, info, error, warning, vardump',
 				),
 				// uncomment the following to show log messages on web pages
-				
+				/*
 				array(
 					'class'=>'CWebLogRoute',
 					'enabled'=> YII_DEBUG,
 					'levels'=>'notice, warning, trace, error',
 					'categories'=>'application',
 					'showInFireBug'=>true,
-				),
+				),*/
 
 			),
 		),

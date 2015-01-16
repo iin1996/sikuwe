@@ -44,8 +44,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 <?php //$this->widget('zii.widgets.grid.CGridView', array(
 	//$this->widget('booster.widgets.TbGridView', array(
 	$this->widget('booster.widgets.TbExtendedGridView', array(
-		'fixedHeader'=>true,
-		'headerOffset'=>40,	
+		//'fixedHeader'=>true,
+		//'headerOffset'=>40,	
 	'id'=>'penduduk-grid',
 	'type'=>'striped bordered',
 	'dataProvider'=>$model->search(),
@@ -78,8 +78,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		array(
 			'header'=>'Aksi',
 			'class'=>'booster.widgets.TbButtonColumn',
-			'deleteConfirmation'=>'Anda yakin mau menghapus data penduduk ini?',
-			'deleteButtonUrl'=>Yii::app()->createUrl("penduduk/admin/delete/id/".$model->id_penduduk),
+			//'deleteConfirmation'=>'Anda yakin mau menghapus data penduduk ini?',
+			//'deleteButtonUrl'=>Yii::app()->createUrl("penduduk/admin/delete/id/".$model->id_penduduk),
 			'htmlOptions'=>array('style'=>'width: 100px'),
 		),
 	),

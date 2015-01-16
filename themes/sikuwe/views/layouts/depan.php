@@ -95,7 +95,7 @@ $this->renderPartial('//layouts/jumlahPenduduk');
 
 //$this->renderPartial('//layouts/member'); 
 
-$this->renderPartial('//layouts/opensource'); 
+//$this->renderPartial('//layouts/opensource'); 
 
 //$this->renderPartial('//layouts/statistik'); 
 

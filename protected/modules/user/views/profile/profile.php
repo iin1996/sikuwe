@@ -3,14 +3,14 @@ $this->breadcrumbs=array(
 	UserModule::t("Profile"),
 );
 $this->menu=array(
-	array('label'=>'OPERATION'),
+	array('label'=>'Menu Pengguna'),
 	((UserModule::isAdmin())
-		?array('label'=>UserModule::t('Manage Users'), 'url'=>array('/user/admin'))
+		?array('label'=>UserModule::t('Manage Users'), 'url'=>array('/user/admin'),'icon'=>'cog')
 		:array()),
-    array('label'=>UserModule::t('List User'), 'url'=>array('/user')),
-    array('label'=>UserModule::t('Edit'), 'url'=>array('edit')),
-    array('label'=>UserModule::t('Change password'), 'url'=>array('changepassword')),
-    array('label'=>UserModule::t('Logout'), 'url'=>array('/user/logout')),
+    array('label'=>UserModule::t('List User'), 'url'=>array('/user'),'icon'=>'th-list'),
+    array('label'=>UserModule::t('Edit'), 'url'=>array('edit'),'icon'=>'edit'),
+    array('label'=>UserModule::t('Change password'), 'url'=>array('changepassword'),'icon'=>'lock'),
+    //array('label'=>UserModule::t('Logout'), 'url'=>array('/user/logout'),'icon'=>'log-out'),
 );
 ?><h1><?php echo UserModule::t('Your profile'); ?></h1>
 
