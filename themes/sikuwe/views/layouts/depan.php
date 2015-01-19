@@ -60,11 +60,15 @@
 
     </div>
 </div>
+<div class=" row">
+    <?php
+    $this->renderPartial('//layouts/jumlahPenduduk');
+    ?>
 
-<?php
-$this->renderPartial('//layouts/jumlahPenduduk');
-?>
-
+    <?php
+    $this->renderPartial('//layouts/jumlahLakiLaki');
+    ?>
+</div>
 <div class="row">
     <div class="box col-md-12">
         <div class="box-inner">

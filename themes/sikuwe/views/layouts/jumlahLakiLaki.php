@@ -2,8 +2,8 @@
         <a class="well top-block" href="<?php echo Yii::app()->baseUrl ?>/index.php/penduduk/admin/index">
             <i class="glyphicon glyphicon-user blue"></i>
 
-            <div>Total penduduk</div>
-            <div><?php echo Yii::app()->getModule('penduduk')->jumlahPenduduk();?></div>
+            <div>Penduduk Laki-Laki</div>
+            <div><?php echo Yii::app()->getModule('penduduk')->jumlahLakiLaki();?></div>
             <!-- <span class="notification"></span> -->
         </a>
     </div>
