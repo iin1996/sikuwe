@@ -1,6 +1,6 @@
 <?php
 
-class SuratMasukController extends Controller
+class SuratKeluarController extends Controller
 {
 /**
 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -61,16 +61,16 @@ $this->render('view',array(
 */
 public function actionCreate()
 {
-$model=new suratMasuk;
+$model=new suratKeluar;
 
 // Uncomment the following line if AJAX validation is needed
 // $this->performAjaxValidation($model);
 
-if(isset($_POST['suratMasuk']))
+if(isset($_POST['suratKeluar']))
 {
-$model->attributes=$_POST['suratMasuk'];
+$model->attributes=$_POST['suratKeluar'];
 if($model->save())
-$this->redirect(array('view','id'=>$model->id_surat));
+$this->redirect(array('view','id'=>$model->id));
 }
 
 $this->render('create',array(
@@ -90,11 +90,11 @@ $model=$this->loadModel($id);
 // Uncomment the following line if AJAX validation is needed
 // $this->performAjaxValidation($model);
 
-if(isset($_POST['suratMasuk']))
+if(isset($_POST['suratKeluar']))
 {
-$model->attributes=$_POST['suratMasuk'];
+$model->attributes=$_POST['suratKeluar'];
 if($model->save())
-$this->redirect(array('view','id'=>$model->id_surat));
+$this->redirect(array('view','id'=>$model->id));
 }
 
 $this->render('update',array(
@@ -127,7 +127,7 @@ throw new CHttpException(400,'Invalid request. Please do not repeat this request
 */
 public function actionIndex()
 {
-$dataProvider=new CActiveDataProvider('suratMasuk');
+$dataProvider=new CActiveDataProvider('suratKeluar');
 $this->render('index',array(
 'dataProvider'=>$dataProvider,
 ));
@@ -138,10 +138,10 @@ $this->render('index',array(
 */
 public function actionAdmin()
 {
-$model=new suratMasuk('search');
+$model=new suratKeluar('search');
 $model->unsetAttributes();  // clear any default values
-if(isset($_GET['suratMasuk']))
-$model->attributes=$_GET['suratMasuk'];
+if(isset($_GET['suratKeluar']))
+$model->attributes=$_GET['suratKeluar'];
 
 $this->render('admin',array(
 'model'=>$model,
@@ -155,7 +155,7 @@ $this->render('admin',array(
 */
 public function loadModel($id)
 {
-$model=suratMasuk::model()->findByPk($id);
+$model=suratKeluar::model()->findByPk($id);
 if($model===null)
 throw new CHttpException(404,'The requested page does not exist.');
 return $model;
@@ -167,7 +167,7 @@ return $model;
 */
 protected function performAjaxValidation($model)
 {
-if(isset($_POST['ajax']) && $_POST['ajax']==='surat-masuk-form')
+if(isset($_POST['ajax']) && $_POST['ajax']==='surat-keluar-form')
 {
 echo CActiveForm::validate($model);
 Yii::app()->end();

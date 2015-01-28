@@ -1,15 +1,15 @@
 <?php
 $this->breadcrumbs=array(
-	'Surat Masuks',
+	'Surat Keluars',
 );
 
 $this->menu=array(
-array('label'=>'Create suratMasuk','url'=>array('create')),
-array('label'=>'Manage suratMasuk','url'=>array('admin')),
+array('label'=>'Create suratKeluar','url'=>array('create')),
+array('label'=>'Manage suratKeluar','url'=>array('admin')),
 );
 ?>
 
-<h1>Surat Masuks</h1>
+<h1>Surat Keluars</h1>
 
 <?php $this->widget('booster.widgets.TbListView',array(
 'dataProvider'=>$dataProvider,

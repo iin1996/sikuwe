@@ -13,13 +13,15 @@
                 'items'=>array(
                     // Important: you need to specify url as 'controller/action',
                     // not just as 'controller' even if default acion is used.
-                    array('label'=>'Menu', 'itemOptions'=>array('class'=>'nav-header')),
                     array('label'=>'<i class="glyphicon glyphicon-home"></i>  Beranda', 'url'=>Yii::app()->baseUrl),
                     // 'Products' menu item will be selected no matter which tag parameter value is since it's not specified.
+                    array('label'=>'Kependudukan', 'itemOptions'=>array('class'=>'nav-header')),
                     array('label'=>'<i class="glyphicon glyphicon-pencil"></i> Entri Data', 'url'=>Yii::app()->getModule('penduduk')->pendudukAdminCreateUrl),
                     array('label'=>'<i class="glyphicon glyphicon-th-list"></i> Penduduk', 'url'=>Yii::app()->getModule('penduduk')->pendudukAdminIndexUrl),
-                    //array('label'=>'Administratif', 'itemOptions'=>array('class'=>'nav-header hidden-md')),
                     array('label'=>'<i class="glyphicon glyphicon-cog"></i> Kelola Data', 'url'=>Yii::app()->getModule('penduduk')->pendudukAdminAdminUrl),
+                    array('label'=>'Administrasi', 'itemOptions'=>array('class'=>'nav-header')),
+                    array('label'=>'<i class="glyphicon glyphicon-inbox"></i> Surat Masuk', 'url'=>Yii::app()->getModule('administrasi')->catatSuratMasukUrl, 'visible'=>!Yii::app()->user->isGuest),
+                    array('label'=>'<i class="glyphicon glyphicon-envelope"></i> Surat Keluar', 'url'=>Yii::app()->getModule('administrasi')->catatSuratKeluarUrl, 'visible'=>!Yii::app()->user->isGuest),
                     array('label'=>'User Menu', 'itemOptions'=>array('class'=>'nav-header hidden-md')),
                     array('label'=>'<i class="glyphicon glyphicon-lock"></i> Login', 'url'=>Yii::app()->getModule('user')->loginUrl, 'visible'=>Yii::app()->user->isGuest),
                     array('label'=>'<i class="glyphicon glyphicon-user"></i> Profil', 'url'=>Yii::app()->getModule('user')->profileUrl, 'visible'=>!Yii::app()->user->isGuest),

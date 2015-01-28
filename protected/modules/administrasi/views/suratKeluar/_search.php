@@ -3,13 +3,13 @@
 	'method'=>'get',
 )); ?>
 
-		<?php echo $form->textFieldGroup($model,'id_surat',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+		<?php echo $form->textFieldGroup($model,'id',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
 		<?php echo $form->textFieldGroup($model,'nomor',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>25)))); ?>
 
-		<?php echo $form->datePickerGroup($model,'tanggal_masuk',array('widgetOptions'=>array('options'=>array(),'htmlOptions'=>array('class'=>'span5')), 'prepend'=>'<i class="glyphicon glyphicon-calendar"></i>', 'append'=>'Click on Month/Year to select a different Month/Year.')); ?>
+		<?php echo $form->datePickerGroup($model,'tanggal',array('widgetOptions'=>array('options'=>array(),'htmlOptions'=>array('class'=>'span5')), 'prepend'=>'<i class="glyphicon glyphicon-calendar"></i>', 'append'=>'Click on Month/Year to select a different Month/Year.')); ?>
 
-		<?php echo $form->textFieldGroup($model,'pengirim',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>50)))); ?>
+		<?php echo $form->textFieldGroup($model,'tujuan',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>50)))); ?>
 
 		<?php echo $form->textAreaGroup($model,'isi_surat', array('widgetOptions'=>array('htmlOptions'=>array('rows'=>6, 'cols'=>50, 'class'=>'span8')))); ?>
 

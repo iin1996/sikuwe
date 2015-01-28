@@ -14,6 +14,11 @@ class AdministrasiModule extends CWebModule
 		));
 	}
 
+	public $catatSuratMasukUrl = array('/administrasi/suratMasuk/create');
+	public $suratMasukIndexUrl = array('/administrasi/suratMasuk/index');
+	public $catatSuratKeluarUrl = array('/administrasi/suratKeluar/create');
+	public $suratKeluarIndexUrl = array('/administrasi/suratKeluar/index');
+
 	public function beforeControllerAction($controller, $action)
 	{
 		if(parent::beforeControllerAction($controller, $action))

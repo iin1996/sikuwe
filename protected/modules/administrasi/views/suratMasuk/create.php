@@ -1,18 +1,15 @@
 <?php
-/* @var $this SuratMasukController */
-/* @var $model suratMasuk */
-
 $this->breadcrumbs=array(
-	'Surat Masuks'=>array('index'),
-	'Create',
+	'Surat Masuk'=>array('index'),
+	'Buat',
 );
 
 $this->menu=array(
-	array('label'=>'List suratMasuk', 'url'=>array('index')),
-	array('label'=>'Manage suratMasuk', 'url'=>array('admin')),
+array('label'=>'Daftar Surat Masuk','url'=>array('index'), 'icon'=>'th-list'),
+array('label'=>'Kelola Surat Masuk','url'=>array('admin'), 'icon'=>'cog'),
 );
 ?>
 
-<h1>Create suratMasuk</h1>
+<h1>Catat <strong>Surat Masuk</strong></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

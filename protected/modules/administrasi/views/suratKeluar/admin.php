@@ -1,12 +1,12 @@
 <?php
 $this->breadcrumbs=array(
-	'Surat Masuks'=>array('index'),
+	'Surat Keluars'=>array('index'),
 	'Manage',
 );
 
 $this->menu=array(
-array('label'=>'List suratMasuk','url'=>array('index')),
-array('label'=>'Create suratMasuk','url'=>array('create')),
+array('label'=>'List suratKeluar','url'=>array('index')),
+array('label'=>'Create suratKeluar','url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -15,7 +15,7 @@ $('.search-form').toggle();
 return false;
 });
 $('.search-form form').submit(function(){
-$.fn.yiiGridView.update('surat-masuk-grid', {
+$.fn.yiiGridView.update('surat-keluar-grid', {
 data: $(this).serialize()
 });
 return false;
@@ -23,7 +23,7 @@ return false;
 ");
 ?>
 
-<h1>Manage Surat Masuks</h1>
+<h1>Manage Surat Keluars</h1>
 
 <p>
 	You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>
@@ -39,14 +39,14 @@ return false;
 </div><!-- search-form -->
 
 <?php $this->widget('booster.widgets.TbGridView',array(
-'id'=>'surat-masuk-grid',
+'id'=>'surat-keluar-grid',
 'dataProvider'=>$model->search(),
 'filter'=>$model,
 'columns'=>array(
-		'id_surat',
+		'id',
 		'nomor',
-		'tanggal_masuk',
-		'pengirim',
+		'tanggal',
+		'tujuan',
 		'isi_surat',
 		'keterangan',
 array(
