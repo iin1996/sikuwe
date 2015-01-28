@@ -67,4 +67,14 @@ class PendudukModule extends CWebModule
 		return $jumlah_lakilaki;
 	}
 
+	public function jumlahPerempuan()
+	{
+		$criteria = new CDbCriteria;
+		$criteria->condition = 'id_jenis_kelamin=:id_jenis_kelamin';
+		$criteria->params = array(':id_jenis_kelamin'=>'Perempuan');
+		$jumlah_perempuan = Penduduk::model()->count($criteria);
+
+		return $jumlah_perempuan;
+	}
+
 }

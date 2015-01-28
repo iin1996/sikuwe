@@ -36,12 +36,20 @@
 
 
         <ul class="collapse navbar-collapse nav navbar-nav top-menu">
-            <li><a href="http://puskomedia.com"><i class="glyphicon glyphicon-globe"></i> Kunjungi situs pembuat</a></li>
+            <!-- <li><a href="http://puskomedia.com"><i class="glyphicon glyphicon-globe"></i> Kunjungi situs pembuat</a></li> -->
             <li>
-                <form class="navbar-search pull-left">
+                <?php /* $form=$this->beginWidget('booster.widgets.TbActiveForm', array(
+                    'action'=>Yii::app()->createUrl($this->route),
+                    'method'=>'get',
+                    'htmlOptions'=>array('style'=>'min-width:155px;','class'=>'navbar-search pull-left'),
+                )); ?>
+                <?php echo $form->textFieldGroup(Yii::app()->getModule('penduduk'), 'nama', array('class'=>'input-medium', 'prepend'=>'<i class="glyphicon glyphicon-search"></i>','style'=>'max-width:150px;')); ?>
+                <?php $this->endWidget(); */ ?>
+
+                <!-- <form class="navbar-search pull-left">
                     <input placeholder="Pencarian" class="search-query form-control col-md-10" name="query"
                            type="text" style="min-width: 155px">
-                </form>
+                </form> -->
             </li>
         </ul>
 

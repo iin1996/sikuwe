@@ -8,6 +8,10 @@ class CPenduduk extends CApplicationComponent
 		Yii::import('application.modules.penduduk.models.*');
 	}
 
+
+
+	
+	/*
 	public function jumlahPenduduk()
 	{
 		$criteria = new CDbCriteria;
@@ -17,7 +21,7 @@ class CPenduduk extends CApplicationComponent
 
 		return $jumlah_penduduk;
 	}
-	/*
+	
 	public function jumlahPendudukLakiLaki()
 	{
 		$criteria = new CDbCriteria;
