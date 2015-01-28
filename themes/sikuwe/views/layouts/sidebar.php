@@ -13,7 +13,7 @@
                 'items'=>array(
                     // Important: you need to specify url as 'controller/action',
                     // not just as 'controller' even if default acion is used.
-                    array('label'=>'Menu utama', 'itemOptions'=>array('class'=>'nav-header')),
+                    array('label'=>'Menu', 'itemOptions'=>array('class'=>'nav-header')),
                     array('label'=>'<i class="glyphicon glyphicon-home"></i>  Beranda', 'url'=>Yii::app()->baseUrl),
                     // 'Products' menu item will be selected no matter which tag parameter value is since it's not specified.
                     array('label'=>'<i class="glyphicon glyphicon-pencil"></i> Entri Data', 'url'=>Yii::app()->getModule('penduduk')->pendudukAdminCreateUrl),

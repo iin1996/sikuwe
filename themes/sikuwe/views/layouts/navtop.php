@@ -12,25 +12,6 @@
                 <!-- <span class="caret"></span> -->
             </button>
 
-                <?php /*
-                $this->widget('booster.widgets.TbMenu', array(
-                    'type'=>'navbar',
-                    'htmlOptions'=>array('class'=>'dropdown-menu'),
-                    'items'=>array(
-                        // Important: you need to specify url as 'controller/action',
-                        // not just as 'controller' even if default acion is used.
-                        // array('label'=>'Menu utama', 'itemOptions'=>array('class'=>'nav-header')),
-                        //array('label'=>'Beranda', 'url'=>'./'),
-                        // 'Products' menu item will be selected no matter which tag parameter value is since it's not specified.
-                        array('label'=>'Profil', 'url'=>Yii::app()->getModule('user')->profileUrl),
-                        //array('label'=>'Penduduk', 'url'=>array('penduduk')),
-                        array('itemOptions'=>array('class'=>'divider'),),
-                        array('label'=>'Logout', 'url'=>Yii::app()->getModule('user')->logoutUrl, 'visible'=>!Yii::app()->user->isGuest),
-                        array('label'=>'Login', 'url'=>Yii::app()->getModule('user')->loginUrl, 'visible'=>Yii::app()->user->isGuest),
-                    ),
-                )); */
-                ?>
-
         </div>
         <!-- akhir user dropdown -->
 
@@ -38,18 +19,12 @@
         <ul class="collapse navbar-collapse nav navbar-nav top-menu">
             <!-- <li><a href="http://puskomedia.com"><i class="glyphicon glyphicon-globe"></i> Kunjungi situs pembuat</a></li> -->
             <li>
-                <?php /* $form=$this->beginWidget('booster.widgets.TbActiveForm', array(
-                    'action'=>Yii::app()->createUrl($this->route),
-                    'method'=>'get',
-                    'htmlOptions'=>array('style'=>'min-width:155px;','class'=>'navbar-search pull-left'),
-                )); ?>
-                <?php echo $form->textFieldGroup(Yii::app()->getModule('penduduk'), 'nama', array('class'=>'input-medium', 'prepend'=>'<i class="glyphicon glyphicon-search"></i>','style'=>'max-width:150px;')); ?>
-                <?php $this->endWidget(); */ ?>
 
-                <!-- <form class="navbar-search pull-left">
+
+                <form class="navbar-search pull-left">
                     <input placeholder="Pencarian" class="search-query form-control col-md-10" name="query"
                            type="text" style="min-width: 155px">
-                </form> -->
+                </form>
             </li>
         </ul>
 

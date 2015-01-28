@@ -4,43 +4,19 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="wide form" style="padding-left: 50px;">
+<div class="wide form" style="padding-left: 15px;"> 
 
 <?php //$form=$this->beginWidget('CActiveForm', array(
 	$form=$this->beginWidget('booster.widgets.TbActiveForm', array(
-		//'type'=>'search',
+	'type'=>'horizontal',
 	'action'=>Yii::app()->createUrl($this->route),
 	'method'=>'get',
-	'htmlOptions'=>array('style'=>'max-width:30%;'),
+	'htmlOptions'=>array('style'=>'max-width:50%;'),
 )); ?>
 
-<?php echo $form->textFieldGroup($model, 'nama', array('class'=>'input-medium', 'prepend'=>'<i class="glyphicon glyphicon-search"></i>','style'=>'max-width:150px;')); ?>
-<?php $this->widget('booster.widgets.TbButton', array('buttonType'=>'submit', 'label'=>'Cari')); ?>
-<!--
-<table>
-	<tr>
-	<td>
-		<?php //echo $form->label($model,'nama'); ?>
-	</td>
-	<td>
-		<?php //echo $form->label($model,'tempat_lahir'); ?>
-	</td>
-	</tr>
-	<tr>
-	<td>
-		<?php //echo $form->textField($model,'nama',array('class'=>'span3')); ?>
-	</td>
-	<td>
-		<?php //echo $form->textField($model,'tempat_lahir',array('class'=>'span3')); ?>
+<?php echo $form->textFieldGroup($model, 'nama', array('class'=>'input-medium', 'prepend'=>'<i class="glyphicon glyphicon-search"></i>','style'=>'max-width:250px;')); ?>
+<?php //$this->widget('booster.widgets.TbButton', array('buttonType'=>'submit', 'label'=>'Cari')); ?>
 
-	</td>
-	</tr>
-	<tr><td></td>
-	<td class="row buttons">
-		<?php //echo CHtml::submitButton('Cari', array('class'=>'btn btn-primary')); ?>
-	</td>
-	</tr>
-</table> -->
 <?php $this->endWidget(); ?>
 
 </div><!-- search-form -->

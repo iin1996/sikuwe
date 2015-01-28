@@ -28,6 +28,7 @@ return array(
 
 	'modules'=>array(
 		'penduduk',
+		'administrasi',
 		
 		'user'=>array(
 			//'tableUsers' => 'users',
@@ -142,14 +143,14 @@ return array(
 					'levels'=>'trace, info, error, warning, vardump',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+				
 				array(
 					'class'=>'CWebLogRoute',
 					'enabled'=> YII_DEBUG,
-					'levels'=>'notice, warning, trace, error',
+					'levels'=>'error, warning, trace, log, vardump',
 					'categories'=>'application',
-					'showInFireBug'=>true,
-				),*/
+					'showInFireBug'=>false,
+				),
 
 			),
 		),

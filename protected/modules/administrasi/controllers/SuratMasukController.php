@@ -1,6 +1,6 @@
 <?php
 
-class AdminController extends Controller
+class SuratMasukController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -62,16 +62,16 @@ class AdminController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Penduduk;
+		$model=new suratMasuk;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Penduduk']))
+		if(isset($_POST['suratMasuk']))
 		{
-			$model->attributes=$_POST['Penduduk'];
+			$model->attributes=$_POST['suratMasuk'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_penduduk));
+				$this->redirect(array('view','id'=>$model->id_surat));
 		}
 
 		$this->render('create',array(
@@ -89,13 +89,13 @@ class AdminController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		$this->performAjaxValidation($model);
+		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Penduduk']))
+		if(isset($_POST['suratMasuk']))
 		{
-			$model->attributes=$_POST['Penduduk'];
+			$model->attributes=$_POST['suratMasuk'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_penduduk));
+				$this->redirect(array('view','id'=>$model->id_surat));
 		}
 
 		$this->render('update',array(
@@ -110,30 +110,11 @@ class AdminController extends Controller
 	 */
 	public function actionDelete($id)
 	{
+		$this->loadModel($id)->delete();
 
-		if(Yii::app()->request->isPostRequest)
-		{
-			// we only allow deletion via POST request
-			$penduduk = Penduduk::model()-findByPk($id);
-                        //$relations = $penduduk->getRelated();
-                        //print_r($relations);
-//                        foreach($relations AS $relation){
-//                            $relation->delete();
-//                        }
-            $penduduk = array();
-
-            foreach ($penduduk as $key => $id) {
-            	Penduduk::model()->findByPk($id)->delete();
-            }
-
-            //$penduduk->delete();
-			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-			//if(!isset($_GET['ajax']))
-			//	$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-		}
-		//else
-		//	throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
-
+		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+		if(!isset($_GET['ajax']))
+			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
 
 	/**
@@ -141,10 +122,9 @@ class AdminController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Penduduk');
+		$dataProvider=new CActiveDataProvider('suratMasuk');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
-
 		));
 	}
 
@@ -153,10 +133,10 @@ class AdminController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Penduduk('search');
+		$model=new suratMasuk('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Penduduk']))
-			$model->attributes=$_GET['Penduduk'];
+		if(isset($_GET['suratMasuk']))
+			$model->attributes=$_GET['suratMasuk'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -170,7 +150,7 @@ class AdminController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Penduduk::model()->findByPk($id);
+		$model=suratMasuk::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -182,7 +162,7 @@ class AdminController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='penduduk-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='surat-masuk-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
