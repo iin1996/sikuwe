@@ -10,7 +10,7 @@
 <div class="row" style="padding-left: 15px;">
 <?php /** @var BootActiveForm $form */
 $form = $this->beginWidget('booster.widgets.TbActiveForm', array(
-    //'id'=>'form-penduduk',
+    'id'=>'penduduk-form',
     'type'=>'horizontal',
     //'htmlOptions'=>array('class'=>'well'),
 )); ?>

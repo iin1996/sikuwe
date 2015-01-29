@@ -7,23 +7,6 @@ class PendudukController extends Controller
 		$this->render('index');
 	}
 
-	public function actionDelete($id)
-	{
-
-		if(Yii::app()->request->isPostRequest)
-		{
-			$penduduk = $this->loadModel($id);
-
-            $penduduk->delete();
-			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-			if(!isset($_GET['ajax']))
-				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-		}
-		else
-			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
-
-	}
-
 	// Uncomment the following methods and override them if needed
 	/*
 	public function filters()

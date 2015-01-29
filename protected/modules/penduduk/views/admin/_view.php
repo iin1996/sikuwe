@@ -10,7 +10,7 @@
 	//$this->widget('booster.widgets.TbExtendedGridView', array(
 	//	'fixedHeader'=>true,
 	//	'headerOffset'=>40,
-		'id'=>'penduduk-grid',
+		'id'=>'penduduk-form',
 		'type'=>'striped bordered condensed',
 		'dataProvider'=>$dataProvider,
 		'template'=>"{items}",

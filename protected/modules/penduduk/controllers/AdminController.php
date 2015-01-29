@@ -110,27 +110,27 @@ class AdminController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-
-		if(Yii::app()->request->isPostRequest)
-		{
+		//$this->loadModel($id)->delete();
+		//if(Yii::app()->request->isPostRequest)
+		//{
 			// we only allow deletion via POST request
-			$penduduk = Penduduk::model()-findByPk($id);
+			$penduduk = Penduduk::model()->findByPk($id_penduduk);
                         //$relations = $penduduk->getRelated();
                         //print_r($relations);
 //                        foreach($relations AS $relation){
 //                            $relation->delete();
 //                        }
-            $penduduk = array();
+            //$penduduk = array();
 
-            foreach ($penduduk as $key => $id) {
-            	Penduduk::model()->findByPk($id)->delete();
-            }
+            //foreach ($penduduk as $key => $id) {
+            //	Penduduk::model()->findByPk($id)->delete();
+            //}
 
-            //$penduduk->delete();
+            $penduduk->delete();
 			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-			//if(!isset($_GET['ajax']))
-			//	$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-		}
+			if(!isset($_GET['ajax']))
+				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		//}
 		//else
 		//	throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
 
@@ -141,7 +141,7 @@ class AdminController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Penduduk');
+		$dataProvider=new CActiveDataProvider('Penduduk', array('pagination'=>array('pageSize'=>5)));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 
