@@ -54,7 +54,7 @@ class Penduduk extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nik, nama, tempat_lahir, tanggal_lahir, kewarganegaraan, foto, sidik_jari, id_jenis_kelamin, id_golongan_darah, id_agama, id_status_kawin, id_status_tinggal, id_pendidikan, id_pekerjaan, id_status_kependudukan, is_temporary, diperbarui', 'required'),
+			array('nik, nama, tempat_lahir, tanggal_lahir, kewarganegaraan',  'required'),
 			array('is_active', 'numerical', 'integerOnly'=>true),
 			array('nik', 'length', 'max'=>16),
 			array('nama', 'length', 'max'=>75),
@@ -86,22 +86,22 @@ class Penduduk extends CActiveRecord
 	{
 		return array(
 			'id_penduduk' => 'Id Penduduk',
-			'nik' => 'Nik',
+			'nik' => 'NIK',
 			'nama' => 'Nama',
 			'tempat_lahir' => 'Tempat Lahir',
 			'tanggal_lahir' => 'Tanggal Lahir',
 			'kewarganegaraan' => 'Kewarganegaraan',
 			'foto' => 'Foto',
 			'sidik_jari' => 'Sidik Jari',
-			'id_jenis_kelamin' => 'Id Jenis Kelamin',
-			'id_golongan_darah' => 'Id Golongan Darah',
-			'id_agama' => 'Id Agama',
-			'id_status_kawin' => 'Id Status Kawin',
-			'id_status_tinggal' => 'Id Status Tinggal',
-			'id_pendidikan' => 'Id Pendidikan',
-			'id_pekerjaan' => 'Id Pekerjaan',
-			'id_cacat' => 'Id Cacat',
-			'id_status_kependudukan' => 'Id Status Kependudukan',
+			'id_jenis_kelamin' => 'Jenis Kelamin',
+			'id_golongan_darah' => 'Golongan Darah',
+			'id_agama' => 'Agama',
+			'id_status_kawin' => 'Status Kawin',
+			'id_status_tinggal' => 'Status Tinggal',
+			'id_pendidikan' => 'Pendidikan',
+			'id_pekerjaan' => 'Pekerjaan',
+			'id_cacat' => 'Cacat',
+			'id_status_kependudukan' => 'Status Kependudukan',
 			'is_active' => 'Is Active',
 			'is_temporary' => 'Is Temporary',
 			'disimpan' => 'Disimpan',
@@ -126,7 +126,7 @@ class Penduduk extends CActiveRecord
 		$criteria->compare('tempat_lahir',$this->tempat_lahir,true);
 		$criteria->compare('tanggal_lahir',$this->tanggal_lahir,true);
 		$criteria->compare('kewarganegaraan',$this->kewarganegaraan,true);
-		$criteria->compare('foto',$this->foto,true);
+		/* $criteria->compare('foto',$this->foto,true);
 		$criteria->compare('sidik_jari',$this->sidik_jari,true);
 		$criteria->compare('id_jenis_kelamin',$this->id_jenis_kelamin,true);
 		$criteria->compare('id_golongan_darah',$this->id_golongan_darah,true);
@@ -140,7 +140,7 @@ class Penduduk extends CActiveRecord
 		$criteria->compare('is_active',$this->is_active);
 		$criteria->compare('is_temporary',$this->is_temporary,true);
 		$criteria->compare('disimpan',$this->disimpan,true);
-		$criteria->compare('diperbarui',$this->diperbarui,true);
+		$criteria->compare('diperbarui',$this->diperbarui,true); */
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
