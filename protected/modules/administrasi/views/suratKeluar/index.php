@@ -1,11 +1,11 @@
 <?php
 $this->breadcrumbs=array(
-	'Surat Keluars',
+  'Surat Keluar',
 );
 
 $this->menu=array(
-array('label'=>'Create suratKeluar','url'=>array('create')),
-array('label'=>'Manage suratKeluar','url'=>array('admin')),
+array('label'=>'Create suratKeluar','url'=>array('create'), 'icon'=>'pencil'),
+array('label'=>'Manage suratKeluar','url'=>array('admin'), 'icon'=>'cog'),
 );
 ?>
 

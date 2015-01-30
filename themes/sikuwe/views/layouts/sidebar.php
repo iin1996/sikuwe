@@ -19,6 +19,7 @@
                     array('label'=>'<i class="glyphicon glyphicon-pencil"></i> Entri Data', 'url'=>Yii::app()->getModule('penduduk')->pendudukAdminCreateUrl),
                     array('label'=>'<i class="glyphicon glyphicon-th-list"></i> Penduduk', 'url'=>Yii::app()->getModule('penduduk')->pendudukAdminIndexUrl),
                     array('label'=>'<i class="glyphicon glyphicon-cog"></i> Kelola Data', 'url'=>Yii::app()->getModule('penduduk')->pendudukAdminAdminUrl),
+                    array('label'=>'<i class="glyphicon glyphicon-signal"></i> Statistik', 'url'=>Yii::app()->getModule('statistik')->statUrl),
                     array('label'=>'Administrasi', 'itemOptions'=>array('class'=>'nav-header')),
                     array('label'=>'<i class="glyphicon glyphicon-inbox"></i> Surat Masuk', 'url'=>Yii::app()->getModule('administrasi')->catatSuratMasukUrl, 'visible'=>!Yii::app()->user->isGuest),
                     array('label'=>'<i class="glyphicon glyphicon-envelope"></i> Surat Keluar', 'url'=>Yii::app()->getModule('administrasi')->catatSuratKeluarUrl, 'visible'=>!Yii::app()->user->isGuest),

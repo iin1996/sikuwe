@@ -29,6 +29,7 @@ return array(
 	'modules'=>array(
 		'penduduk',
 		'administrasi',
+		'statistik',
 		
 		'user'=>array(
 			//'tableUsers' => 'users',
