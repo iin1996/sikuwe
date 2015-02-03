@@ -16,6 +16,10 @@ class StatistikModule extends CWebModule
 	}
 
 	public $statUrl = array("/statistik");
+	public $statKelamin = array('/statistik/kelamin');
+	public $statAgama = array('/statistik/agama');
+	public $statPekerjaan = array('/statistik/pekerjaan');
+	public $statGolDarah = array('/statistik/goldarah');
 
 	public function beforeControllerAction($controller, $action)
 	{
@@ -28,15 +32,5 @@ class StatistikModule extends CWebModule
 		else
 			return false;
 	}
-
-	// public function jumlahLakiLaki()
-	// {
-	// 	$criteria = new CDbCriteria;
-	// 	$criteria->condition = 'id_jenis_kelamin=:id_jenis_kelamin';
-	// 	$criteria->params = array(':id_jenis_kelamin'=>'Laki-Laki');
-	// 	$jumlah_lakilaki = Penduduk::model()->count($criteria);
-
-	// 	return $jumlah_lakilaki;
-	// }
 
 }

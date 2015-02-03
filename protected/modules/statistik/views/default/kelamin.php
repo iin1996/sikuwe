@@ -1,18 +1,3 @@
-<?php
-/* @var $this DefaultController */
-
-$this->breadcrumbs=array(
-	$this->module->id,
-
-);
-?>
-<h1>Grafik Kependudukan</h1>
-
-<?php 
-$this->renderPartial('_menu');
-//$this->renderPartial('jenisKelamin');
-?>
-
 <?php 
 //$label=array();
 $nilai=array();
@@ -27,8 +12,8 @@ $this->widget('ext.highcharts.HighchartsWidget', array(
 	//'dataProvider'=>$dataProvider,
     'options'=>array(
     	'chart'=>array(
-    		'type'=>'bar',
-    		'height'=>'200',
+    		//'type'=>'bar',
+    		'height'=>'500',
     		),
 	   'theme'=>'gray',
        'title' => array('text' => 'Grafik Jenis Kelamin'),
@@ -45,7 +30,7 @@ $this->widget('ext.highcharts.HighchartsWidget', array(
           // 	//'value'=>'id_jenis_kelamin',
           // 	'dataResource'=>'id_jenis_kelamin'
           // 	),
-          array('type' => 'bar', 'data' =>$nilai,'name'=>'Jenis Kelamin')
+          array('type' => 'pie', 'data' =>$nilai,'name'=>'Jumlah')
        ),
 	  'scripts' => array(
 	       'highcharts-more',   // enables supplementary chart types (gauge, arearange, columnrange, etc.)
