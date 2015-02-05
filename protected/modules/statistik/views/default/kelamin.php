@@ -24,20 +24,15 @@ $this->widget('ext.highcharts.HighchartsWidget', array(
           'title' => array('text' => 'Jumlah')
        ),
        'series' => array(
-          // array(
-          // 	'type'=>'bar',
-          // 	'title'=>'Jumlah',
-          // 	//'value'=>'id_jenis_kelamin',
-          // 	'dataResource'=>'id_jenis_kelamin'
-          // 	),
           array('type' => 'pie', 'data' =>$nilai,'name'=>'Jumlah')
-       ),
-	  'scripts' => array(
-	       'highcharts-more',   // enables supplementary chart types (gauge, arearange, columnrange, etc.)
-	       'modules/exporting', // adds Exporting button/menu to chart
-	       'themes/grid'        // applies global 'grid' theme to all charts
-	  ),       
-    )
+       ),       
+    ),
+    'credits' => array('enabled' => false),
+    'scripts' => array(
+         'highcharts-more',   // enables supplementary chart types (gauge, arearange, columnrange, etc.)
+         'modules/exporting', // adds Exporting button/menu to chart
+         //'themes/grid'        // applies global 'grid' theme to all charts
+    ),
  ));
 
  ?>
