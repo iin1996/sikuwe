@@ -109,8 +109,7 @@ $this->render('update',array(
 */
 public function actionDelete($id)
 {
-if(Yii::app()->request->isPostRequest)
-{
+if(!empty($id)/*Yii::app()->request->isPostRequest || Yii::app()->request->isGetRequest */){
 // we only allow deletion via POST request
 $this->loadModel($id)->delete();
 
